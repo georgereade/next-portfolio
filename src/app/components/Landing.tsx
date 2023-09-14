@@ -67,7 +67,8 @@ export default function Landing() {
               <h2 className="fw-bold">Hello, I'm George</h2>
               <p>
                 I have a wide range of skills and interests which help me to
-                connect with my projects.
+                connect with my projects and understand how to put the clients
+                vision into action.
               </p>
             </div>
 
