@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
+import Image from "next/image";
 
 export default function Landing() {
   return (
@@ -51,10 +52,12 @@ export default function Landing() {
             </Slide>
           </div>
           <Fade delay={1500} triggerOnce={true}>
-            <img
+            <Image
               src="/profilepic.jpg"
               className="profilepic"
               alt="picture of me"
+              width="200"
+              height="200"
             />
           </Fade>
         </div>
@@ -64,7 +67,7 @@ export default function Landing() {
         <div className="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
           <Fade cascade>
             <div className="col d-flex flex-column align-items-start gap-2">
-              <h2 className="fw-bold">Hello, I'm George</h2>
+              <h2 className="fw-bold">Hello, Im George</h2>
               <p>
                 I have a wide range of skills and interests which help me to
                 connect with my projects and understand how to put the clients

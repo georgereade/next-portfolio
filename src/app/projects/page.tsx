@@ -22,7 +22,12 @@ export default function Page() {
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div className="col">
               <div className="card shadow-sm">
-                <img width="100%" height="225" src="/fpl-react.png" />
+                <img
+                  width="100%"
+                  height="225"
+                  src="/fpl-react.png"
+                  alt="project screenshot"
+                />
                 <rect width="100%" height="100%" fill="#55595c"></rect>
                 <text x="50%" y="50%" fill="#eceeef" dy=".3em">
                   FPL React Info Tool
@@ -40,7 +45,12 @@ export default function Page() {
                           type="button"
                           className="btn btn-sm btn-outline-secondary"
                         >
-                          <img src="/eye-solid.svg" height="30" /> View
+                          <img
+                            src="/eye-solid.svg"
+                            height="30"
+                            alt="view icon"
+                          />{" "}
+                          View
                         </button>
                       </a>
                       <a href="https://github.com/georgereade/fpl-react-app">
@@ -48,7 +58,8 @@ export default function Page() {
                           type="button"
                           className="btn btn-sm btn-outline-secondary"
                         >
-                          <img src="/github.svg" height="30" /> Git Repo
+                          <img src="/github.svg" height="30" alt="git icon" />{" "}
+                          Git Repo
                         </button>
                       </a>
                     </div>
@@ -58,7 +69,12 @@ export default function Page() {
             </div>
             <div className="col">
               <div className="card shadow-sm">
-                <img width="100%" height="225" src="/to-do-list.png" />
+                <img
+                  width="100%"
+                  height="225"
+                  src="/to-do-list.png"
+                  alt="project screenshot"
+                />
                 <rect width="100%" height="100%" fill="#55595c"></rect>
                 <text x="50%" y="50%" fill="#eceeef" dy=".3em">
                   To Do List
@@ -76,7 +92,12 @@ export default function Page() {
                           type="button"
                           className="btn btn-sm btn-outline-secondary"
                         >
-                          <img src="/eye-solid.svg" height="30" /> View
+                          <img
+                            src="/eye-solid.svg"
+                            height="30"
+                            alt="view icon"
+                          />{" "}
+                          View
                         </button>
                       </a>
                       <a href="https://github.com/georgereade/Portfolio/tree/main/projects/Hosted-To-Do-List">
@@ -84,7 +105,8 @@ export default function Page() {
                           type="button"
                           className="btn btn-sm btn-outline-secondary"
                         >
-                          <img src="/github.svg" height="30" /> Git Repo
+                          <img src="/github.svg" height="30" alt="git icon" />{" "}
+                          Git Repo
                         </button>
                       </a>
                     </div>
@@ -94,7 +116,12 @@ export default function Page() {
             </div>
             <div className="col">
               <div className="card shadow-sm">
-                <img width="100%" height="225" src="/fpl-suggest.png" />
+                <img
+                  width="100%"
+                  height="225"
+                  src="/fpl-suggest.png"
+                  alt="project screenshot"
+                />
                 <rect width="100%" height="100%" fill="#55595c"></rect>
                 <text x="50%" y="50%" fill="#eceeef" dy=".3em">
                   Fantasy Premier League Fixture Tracker
@@ -112,7 +139,12 @@ export default function Page() {
                           type="button"
                           className="btn btn-sm btn-outline-secondary"
                         >
-                          <img src="/eye-solid.svg" height="30" /> View
+                          <img
+                            src="/eye-solid.svg"
+                            height="30"
+                            alt="view icon"
+                          />{" "}
+                          View
                         </button>
                       </a>
                       <a href="https://github.com/georgereade/Portfolio/tree/main/projects/FPL%20Suggest">
@@ -120,7 +152,8 @@ export default function Page() {
                           type="button"
                           className="btn btn-sm btn-outline-secondary"
                         >
-                          <img src="/github.svg" height="30" /> Git Repo
+                          <img src="/github.svg" height="30" alt="git icon" />{" "}
+                          Git Repo
                         </button>
                       </a>
                     </div>
