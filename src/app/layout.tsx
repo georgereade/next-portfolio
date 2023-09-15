@@ -20,7 +20,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cookie&family=League+Spartan:wght@100;200;400;700&display=swap"
           rel="stylesheet"
         />
       </head>

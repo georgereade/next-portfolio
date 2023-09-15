@@ -96,3 +96,8 @@ li {
 .fa {
   font-size: 24px;
 }
+
+#nameHeader {
+  font-family: "Cookie", cursive;
+  color: #31e1f7;
+}
