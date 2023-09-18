@@ -136,12 +136,10 @@ a.dropdown-item {
     margin: 15px;
   }
   .icon-row {
-    width: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    justify-content: center;
   }
   .socialLinks {
     display: none;
