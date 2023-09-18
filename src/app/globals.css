@@ -25,26 +25,21 @@ h1,
 h2,
 h3,
 a,
-.feature-icon-small {
-  color: #31e1f7;
-}
-
-#projectslink {
+.feature-icon-small,
+.activeProjects {
   color: #31e1f7;
 }
 
 h4,
-h5 {
-  color: #f07dea;
-}
-
-#cvlink {
+h5,
+.activeCV {
   color: #f07dea;
 }
 
 p,
 ul,
-li {
+li,
+.white {
   color: white;
 }
 
@@ -57,30 +52,15 @@ li {
   border-radius: 50%;
 }
 
-.active {
-  color: white;
-}
-
-@media screen and (max-width: 600px) {
-  #indexbtns {
-    justify-content: center;
-  }
+.cvpic {
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .bg-body-tertiary {
   --bs-bg-opacity: 0;
-}
-
-.pink {
-  color: #f07dea;
-}
-
-.blue {
-  color: #31e1f7;
-}
-
-#projectsbtn {
-  --bs-btn-color: #31e1f7;
 }
 
 #cvbtn {
@@ -100,4 +80,68 @@ li {
 #nameHeader {
   font-family: "Cookie", cursive;
   color: #31e1f7;
+}
+
+.navbar.scrolled {
+  background-color: #1c222e;
+}
+
+.container {
+  padding-top: 10px;
+}
+
+.dropdown-menu,
+a.dropdown-item {
+  background-color: #1c222e;
+  color: white;
+}
+
+.technology-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 32px;
+}
+
+.icon {
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  color: #31e1f7;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+}
+
+.icon-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.techIcon {
+  margin: 20px;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  #indexbtns {
+    justify-content: center;
+  }
+  #basic-navbar-nav {
+    background-color: #1c222e;
+  }
+  .techIcon {
+    margin: 15px;
+  }
+  .icon-row {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .socialLinks {
+    display: none;
+  }
 }

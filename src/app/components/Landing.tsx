@@ -3,11 +3,14 @@
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import Image from "next/image";
+import Footer from "./Footer";
+import { FaJs, FaHtml5, FaCss3, FaReact, FaNode } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
 
 export default function Landing() {
   return (
     <div>
-      <div className="container" id="hero">
+      <div className="container py-5 my-5" id="hero">
         <div className="bg-transparent text-secondary py-4 pt-5 text-center">
           <div className="py-5">
             {" "}
@@ -18,14 +21,11 @@ export default function Landing() {
             </Fade>
             <Slide triggerOnce={true}>
               <div className="col-lg-6 mx-auto">
-                <p className="fs-5 mb-4">UK-based web developer </p>
+                <p className="fs-5 mb-4 pt-5">UK-based web developer </p>
                 <p className="fs-5 mb-4">
                   {" "}
-                  Take a look at some examples of my work in the link below
-                </p>
-                <p className="fs-5 mb-4">
-                  {" "}
-                  Scroll down to learn a bit more about me
+                  View my projects and CV at the links below or scroll down to
+                  learn a bit more about me
                 </p>{" "}
                 <div
                   className="d-grid gap-2 d-sm-flex justify-content-sm-center"
@@ -52,16 +52,34 @@ export default function Landing() {
                 </div>
               </div>
             </Slide>
+            <div className="icon-row mt-5">
+              <Fade cascade delay={500} damping={0.3}>
+                {" "}
+                <FaJs
+                  className="icon techIcon"
+                  fill="#EFF52B"
+                  title="JavaScript"
+                />
+                <FaHtml5 className="icon techIcon" fill="red" title="HTML" />
+                <FaCss3 className="icon techIcon" fill="#2B78F5" title="CSS" />
+                <FaReact
+                  className="icon techIcon"
+                  fill="#61dbfb"
+                  title="React"
+                />
+                <SiNextdotjs
+                  className="icon techIcon"
+                  fill="white"
+                  title="Next.js"
+                />
+                <FaNode
+                  className="icon techIcon"
+                  fill="#66cc33"
+                  title="Node.js"
+                />
+              </Fade>
+            </div>
           </div>
-          <Fade delay={1500} triggerOnce={true}>
-            <Image
-              src="/profilepic.jpg"
-              className="profilepic"
-              alt="picture of me"
-              width="200"
-              height="200"
-            />
-          </Fade>
         </div>
       </div>
       <div className="container px-4 py-5">
@@ -70,11 +88,20 @@ export default function Landing() {
           <Fade cascade>
             <div className="col d-flex flex-column align-items-start gap-2">
               <h2 className="fw-bold">Hello, I&apos;m George</h2>
-              <p>
-                I have a wide range of skills and interests which help me to
-                connect with my projects and understand how to put the clients
+              <h4 className="white">
+                I have a diverse range of skills and interests which helps me to
+                connect with my projects and understand how to put my clients
                 vision into action.
-              </p>
+              </h4>
+              <Fade delay={500} triggerOnce={true}>
+                <Image
+                  src="/profilepic.jpg"
+                  className="profilepic"
+                  alt="picture of me"
+                  width="200"
+                  height="200"
+                />
+              </Fade>
             </div>
 
             <div className="col">
@@ -96,8 +123,8 @@ export default function Landing() {
                   <h4 className="fw-semibold mb-0">Web Development</h4>
                   <p>
                     I have built my portfolio using mainly Javascript, HTML,
-                    CSS, React.js, Next.js and Node. I genuinely enjoy learning
-                    new skills and expanding my capabilities.
+                    CSS, React.js, Next.js and Node. I particularly enjoy
+                    learning new skills and expanding my capabilities.
                   </p>
                 </div>
 
@@ -117,10 +144,9 @@ export default function Landing() {
                   </div>
                   <h4 className="fw-semibold mb-0">Experience</h4>
                   <p>
-                    I have worked for five years in data analysis and insight
-                    roles, which has helped me develop several transferable
-                    skills. I recently completed a full-stack web development
-                    course.
+                    I have over five years experience in data analysis and
+                    insight roles, which has helped me develop important
+                    technical, client facing and project management skills.
                   </p>
                 </div>
 
@@ -136,7 +162,7 @@ export default function Landing() {
                     >
                       <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z" />
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"
                       />
                       <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z" />
@@ -145,8 +171,8 @@ export default function Landing() {
                   <h4 className="fw-semibold mb-0">Skills</h4>
                   <p>
                     I love learning foreign languages, and lived in Shanghai for
-                    a year while studying Chinese. I also love music and play
-                    the guitar and drums.
+                    a year while studying Chinese. I also have a strong interest
+                    in music and play the guitar and drums.
                   </p>
                 </div>
 
@@ -200,7 +226,7 @@ export default function Landing() {
                     </a>
                   </li>
                   <li className="ms-3">
-                    <a href="https://github.com/Roostar93/Portfolio">
+                    <a href="https://github.com/georgereade/Portfolio">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="32"
@@ -219,21 +245,7 @@ export default function Landing() {
           </div>
         </div>
       </Slide>
-      <div className="container">
-        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div className="col-md-4 d-flex align-items-center">
-            <a
-              href="/"
-              className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
-            >
-              <svg className="bi" width="30" height="24">
-                <use href="#bootstrap"></use>
-              </svg>
-            </a>
-            <span className="mb-3 mb-md-0 text-white">© 2023 George Reade</span>
-          </div>
-        </footer>
-      </div>
+      <Footer />
     </div>
   );
 }
