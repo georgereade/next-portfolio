@@ -204,7 +204,7 @@ export default function Landing() {
           </Fade>
         </div>
       </div>
-      <Slide triggerOnce={true}>
+      <Slide triggerOnce={true} delay={1000}>
         <div className="my-5 animate__animated animate__backInUp">
           <div className="p-5 text-center bg-body-tertiary">
             <div className="container py-5">
