@@ -80,6 +80,7 @@ li,
 #nameHeader {
   font-family: "Cookie", cursive;
   color: #31e1f7;
+  font-size: 5rem;
 }
 
 .navbar.scrolled {
