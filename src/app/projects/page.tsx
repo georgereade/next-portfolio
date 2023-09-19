@@ -12,7 +12,7 @@ export default function Page() {
     <div className="container">
       <Header />
       <section className="bg-transparent py-5 text-center container">
-        <div className="row py-lg-5">
+        <div className="row py-lg-5" id="projectsContainer">
           <Slide>
             <div className="col-lg-6 col-md-8 mx-auto pt-3">
               <h1>Projects</h1>

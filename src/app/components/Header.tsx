@@ -27,7 +27,7 @@ export default function Header() {
     };
   }, []);
   // If scrolling, class set as scrolled
-  const navbarClass = scrolling ? "navbar scrolled" : "navbar";
+  const navbarClass = scrolling ? "navbar scrolled" : "navbar notScrolled";
 
   return (
     <Navbar expand="lg" variant="dark" fixed="top" className={navbarClass}>

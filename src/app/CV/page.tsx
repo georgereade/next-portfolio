@@ -11,7 +11,7 @@ export default function Page() {
       <Header />
       <div>
         {" "}
-        <div className="py-5 mt-5 container">
+        <div className="py-5 mt-5 container" id="cvContainer">
           <Slide triggerOnce={true} delay={500}>
             <h4>Education</h4>
             <h5>Courses and Bootcamps</h5>
