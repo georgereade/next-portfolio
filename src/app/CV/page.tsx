@@ -4,7 +4,6 @@ import Header from "../components/Header";
 import React from "react";
 import { Slide, Fade } from "react-awesome-reveal";
 import Footer from "../components/Footer";
-import Image from "next/image";
 
 export default function Page() {
   return (

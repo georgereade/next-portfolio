@@ -89,7 +89,7 @@ export default function Landing() {
             <div className="col d-flex flex-column align-items-start gap-2">
               <h2 className="fw-bold">Hello, I&apos;m George</h2>
               <h4 className="white">
-                I have a diverse range of skills and interests which helps me to
+                I have a wide range of skills and interests which helps me to
                 connect with my projects and understand how to put my clients
                 vision into action.
               </h4>
@@ -122,9 +122,10 @@ export default function Landing() {
                   </div>
                   <h4 className="fw-semibold mb-0">Web Development</h4>
                   <p>
-                    I have built my portfolio using mainly Javascript, HTML,
-                    CSS, React.js, Next.js and Node. I particularly enjoy
-                    learning new skills and expanding my capabilities.
+                    I have worked with many modern languages and frameworks
+                    including Javascript, HTML, CSS, React.js, Next.js and Node.
+                    I particularly enjoy learning new skills and have recently
+                    completed a web development bootcamp.
                   </p>
                 </div>
 
@@ -146,7 +147,9 @@ export default function Landing() {
                   <p>
                     I have over five years experience in data analysis and
                     insight roles, which has helped me develop important
-                    technical, client facing and project management skills.
+                    technical, client facing and project management skills. This
+                    has helped me to appreciate the importance of testing and
+                    user-centric design.
                   </p>
                 </div>
 

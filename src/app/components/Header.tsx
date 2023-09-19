@@ -8,6 +8,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
+  // Set a useState to recognise scrolling, setting a class for the navbar making it opaque
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
@@ -25,7 +26,7 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  // If scrolling, class set as scrolled
   const navbarClass = scrolling ? "navbar scrolled" : "navbar";
 
   return (
@@ -33,6 +34,7 @@ export default function Header() {
       <Container>
         <Navbar.Brand
           href="/"
+          // If current path matches, class set as active
           className={usePathname() === "/" ? "activeHome" : ""}
         >
           George Reade
