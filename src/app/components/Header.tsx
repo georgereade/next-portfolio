@@ -61,7 +61,7 @@ export default function Header() {
               <NavDropdown.Item href="https://www.linkedin.com/in/george-reade-2a1185124">
                 LinkedIn
               </NavDropdown.Item>
-              <NavDropdown.Item href="https://github.com/georgereade/Portfolio">
+              <NavDropdown.Item href="https://github.com/georgereade/">
                 Github
               </NavDropdown.Item>
             </NavDropdown>
@@ -97,7 +97,7 @@ export default function Header() {
               </a>
             </li>
             <li className="ms-3">
-              <a href="https://github.com/georgereade/Portfolio">
+              <a href="https://github.com/georgereade/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
