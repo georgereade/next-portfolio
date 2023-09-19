@@ -244,7 +244,7 @@ export default function Landing() {
                     </a>
                   </li>
                   <li className="ms-3">
-                    <a href="https://github.com/georgereade/Portfolio">
+                    <a href="https://github.com/georgereade/">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="32"
