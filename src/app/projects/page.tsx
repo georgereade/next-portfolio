@@ -49,7 +49,7 @@ export default function Page() {
                       team stats using the Fantasy Premier League API. I used{" "}
                       <strong>Node</strong> and <strong>CSS</strong> and
                       deployed on Render.com using a proxy server. Stats will
-                      automatically throughout the season.
+                      automatically update throughout the season. Please note that this is hosted on a free server so it may take a minute to load.
                     </p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group">
