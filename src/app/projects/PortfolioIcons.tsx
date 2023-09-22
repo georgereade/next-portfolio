@@ -28,15 +28,16 @@ export default function PortfolioIcons() {
             onClose={handleTooltipClose}
             open={open}
             disableFocusListener
+            disableHoverListener
             title={
               <>
                 <div className="technology-icons">
-                  <FaJs className="icon" title="JavaScript" />
-                  <FaHtml5 className="icon" title="HTML" />
-                  <FaCss3 className="icon" title="CSS" />
-                  <FaReact className="icon" title="React" />
-                  <SiNextdotjs className="icon" title="Next.js" />
-                  <FaNode className="icon" title="Node.js" />
+                  <FaJs className="icon" title="JavaScript" fill="#EFF52B" />
+                  <FaHtml5 className="icon" title="HTML" fill="red" />
+                  <FaCss3 className="icon" title="CSS" fill="#2B78F5" />
+                  <FaReact className="icon" title="React" fill="#61dbfb" />
+                  <SiNextdotjs className="icon" title="Next.js" fill="white" />
+                  <FaNode className="icon" title="Node.js" fill="#66cc33" />
                 </div>
               </>
             }

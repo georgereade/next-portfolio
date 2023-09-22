@@ -14,13 +14,13 @@ export default function Page() {
       <section className="bg-transparent py-5 text-center container">
         <div className="row py-lg-5">
           <Slide>
-            <div className="col-lg-6 col-md-8 mx-auto pt-3">
+            <div className="col-lg-6 col-md-8 mx-auto pt-5">
               <h1>Projects</h1>
               <Fade delay={1000}>
-                <p className="fs-5 mb-4">
-                  Here are some key examples of my work. I have aimed to
-                  showcase a variety of skills, languages and frameworks and I
-                  am constantly seeking to expand my capabilities.
+                <p className="fs-5 mb-2">
+                  Here are some examples of my personal projects. I have aimed
+                  to showcase a variety of skills, languages and frameworks and
+                  I am constantly seeking to build on my abilities.
                 </p>
               </Fade>
             </div>
@@ -49,7 +49,9 @@ export default function Page() {
                       team stats using the Fantasy Premier League API. I used{" "}
                       <strong>Node</strong> and <strong>CSS</strong> and
                       deployed on Render.com using a proxy server. Stats will
-                      automatically update throughout the season. Please note that this is hosted on a free server so it may take a minute to load.
+                      automatically update throughout the season. Please note
+                      that this is hosted on a free server so it may take a
+                      minute to load.
                     </p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group">
@@ -95,8 +97,8 @@ export default function Page() {
                   </h6>
                   <div className="card-body">
                     <p className="card-text text-dark">
-                      This is a simple to do list app with a persistent
-                      database, demonstrating use of the back end with
+                      A simple to do list app with a persistent database,
+                      demonstrating use of the back end with
                       <strong> Node.js, Express, EJS</strong> and partials. The
                       database is hosted on <strong>MongoDB</strong> and
                       deployed on Render.com.

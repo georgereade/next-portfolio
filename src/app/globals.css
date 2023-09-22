@@ -17,7 +17,7 @@ body {
 
 body {
   height: 100%;
-  background-image: linear-gradient(#1c222e, #000000);
+  background-image: linear-gradient(#3b4a60, #000000);
   font-family: "League Spartan", sans-serif;
 }
 
@@ -27,13 +27,13 @@ h3,
 a,
 .feature-icon-small,
 .activeProjects {
-  color: #31e1f7;
+  color: #05fdfe;
 }
 
 h4,
 h5,
 .activeCV {
-  color: #f07dea;
+  color: #fe8bf3;
 }
 
 p,
@@ -64,9 +64,9 @@ li,
 }
 
 #cvbtn {
-  --bs-btn-color: #f07dea;
-  --bs-btn-hover-bg: #F07DEA6;
-  --bs-btn-border-color: #f07dea;
+  --bs-btn-color: #fe8bf3;
+  --bs-btn-hover-bg: #fe8bf3;
+  --bs-btn-border-color: #fe8bf3;
   --bs-btn-hover-border-color: var(--bs-btn-border-color);
   --bs-btn-active-bg: var(--bs-btn-border-color);
   --bs-btn-active-border-color: var(--bs-btn-border-color);
@@ -79,7 +79,7 @@ li,
 
 #nameHeader {
   font-family: "Cookie", cursive;
-  color: #31e1f7;
+  color: #05fdfe;
   font-size: 5rem;
 }
 
@@ -108,7 +108,7 @@ a.dropdown-item {
   margin: 10px;
   cursor: pointer;
   transition: transform 0.2s;
-  color: #31e1f7;
+  /* color: #31e1f7; */
 }
 
 .icon:hover {
@@ -132,6 +132,11 @@ a.dropdown-item {
   flex-direction: column;
 }
 
+.socialLinks:hover,
+.navSocialLinks:hover {
+  fill: #05fdfe;
+}
+
 @media screen and (max-width: 1000px) {
   #indexbtns {
     justify-content: center;
@@ -145,10 +150,17 @@ a.dropdown-item {
   .icon-row {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    margin-top: 0px;
   }
-  .socialLinks {
+  .navSocialLinks {
     display: none;
+  }
+  #hero {
+    margin-bottom: 10px;
+    display: inline-flex;
+  }
+  #mainLogo {
+    width: 300px;
+    height: 300px;
   }
 }
