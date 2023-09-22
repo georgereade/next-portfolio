@@ -37,6 +37,13 @@ export default function Header() {
           // If current path matches, class set as active
           className={usePathname() === "/" ? "activeHome" : ""}
         >
+          <img
+            alt="FPL React Logo"
+            src="/main-logo.png"
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+          />{" "}
           George Reade
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
