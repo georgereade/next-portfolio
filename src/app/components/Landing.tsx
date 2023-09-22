@@ -11,75 +11,79 @@ export default function Landing() {
   return (
     <div>
       <div className="container py-5 my-5" id="hero">
-        <div className="bg-transparent text-secondary py-4 pt-5 text-center">
-          <div className="py-5">
-            {" "}
-            <Fade delay={1e1} cascade damping={1e-1} triggerOnce={true}>
-              <h1 className="display-5 fw-bold" id="nameHeader">
+        <Fade delay={1e1} cascade damping={1e-1} triggerOnce={true}>
+          <img
+            alt="FPL React Logo"
+            src="/main-logo.png"
+            width="400"
+            height="400"
+            id="mainLogo"
+          />
+        </Fade>
+        <div className="bg-transparent text-secondary py-3 pt-0 text-center">
+          {/* <div className="py-5"> */}{" "}
+          {/* <Fade delay={1e1} cascade damping={1e-1} triggerOnce={true}> */}
+          {/* <h1 className="display-5 fw-bold" id="nameHeader">
                 George Reade
-              </h1>
-            </Fade>
-            <Slide triggerOnce={true}>
-              <div className="col-lg-6 mx-auto">
-                <p className="fs-5 mb-4 pt-5">UK-based web developer </p>
-                <p className="fs-5 mb-4">
-                  {" "}
-                  View my projects and CV at the links below or scroll down to
-                  learn a bit more about me
-                </p>{" "}
-                <div
-                  className="d-grid gap-2 d-sm-flex justify-content-sm-center"
-                  id="indexbtns"
-                >
-                  <Fade delay={800} triggerOnce={true}>
-                    <a
-                      href="projects"
-                      className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
-                      id="projectsbtn"
-                    >
-                      Projects
-                    </a>
-                  </Fade>
-                  <Fade delay={1100} triggerOnce={true}>
-                    <a
-                      href="CV"
-                      className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
-                      id="cvbtn"
-                    >
-                      CV
-                    </a>
-                  </Fade>
-                </div>
-              </div>
-            </Slide>
-            <div className="icon-row mt-5">
-              <Fade cascade delay={500} damping={0.2}>
+              </h1> */}
+          {/* </Fade> */}
+          <Slide triggerOnce={true}>
+            <div className="col-lg-6 mx-auto">
+              <p className="fs-5 mb-4 pt-5">UK-based web developer </p>
+              <p className="fs-5 mb-4">
                 {" "}
-                <FaJs
-                  className="icon techIcon"
-                  fill="#EFF52B"
-                  title="JavaScript"
-                />
-                <FaHtml5 className="icon techIcon" fill="red" title="HTML" />
-                <FaCss3 className="icon techIcon" fill="#2B78F5" title="CSS" />
-                <FaReact
-                  className="icon techIcon"
-                  fill="#61dbfb"
-                  title="React"
-                />
-                <SiNextdotjs
-                  className="icon techIcon"
-                  fill="white"
-                  title="Next.js"
-                />
-                <FaNode
-                  className="icon techIcon"
-                  fill="#66cc33"
-                  title="Node.js"
-                />
-              </Fade>
+                View my projects and CV at the links below or scroll down to
+                learn a bit more about me
+              </p>{" "}
+              <div
+                className="d-grid gap-2 d-sm-flex justify-content-sm-center"
+                id="indexbtns"
+              >
+                <Fade delay={800} triggerOnce={true}>
+                  <a
+                    href="projects"
+                    className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
+                    id="projectsbtn"
+                  >
+                    Projects
+                  </a>
+                </Fade>
+                <Fade delay={1100} triggerOnce={true}>
+                  <a
+                    href="CV"
+                    className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
+                    id="cvbtn"
+                  >
+                    CV
+                  </a>
+                </Fade>
+              </div>
             </div>
+          </Slide>
+          <div className="icon-row mt-5">
+            <Fade cascade delay={500} damping={0.2}>
+              {" "}
+              <FaJs
+                className="icon techIcon"
+                fill="#EFF52B"
+                title="JavaScript"
+              />
+              <FaHtml5 className="icon techIcon" fill="red" title="HTML" />
+              <FaCss3 className="icon techIcon" fill="#2B78F5" title="CSS" />
+              <FaReact className="icon techIcon" fill="#61dbfb" title="React" />
+              <SiNextdotjs
+                className="icon techIcon"
+                fill="white"
+                title="Next.js"
+              />
+              <FaNode
+                className="icon techIcon"
+                fill="#66cc33"
+                title="Node.js"
+              />
+            </Fade>
           </div>
+          {/* </div> */}
         </div>
       </div>
       <div className="container px-4 py-5">
