@@ -60,7 +60,7 @@ export default function Landing() {
               </div>
             </div>
           </Slide>
-          <div className="icon-row mt-5">
+          <div className="icon-row mt-5 pb-3">
             <Fade cascade delay={500} damping={0.2}>
               {" "}
               <FaJs
