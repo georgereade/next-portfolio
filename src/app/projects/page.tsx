@@ -50,7 +50,7 @@ export default function Page() {
                       <strong>Node</strong> and <strong>CSS</strong> and
                       deployed on Render.com using a proxy server. Stats will
                       automatically update throughout the season. Please note
-                      that this is hosted on a free server so it may take a
+                      that this is hosted on a free server, so it may take a
                       minute to load.
                     </p>
                     <div className="d-flex justify-content-between align-items-center">
@@ -151,7 +151,7 @@ export default function Page() {
                       <strong> Next.js</strong>, written in{" "}
                       <strong>Typescript</strong> and using{" "}
                       <strong>Bootstrap</strong> for styling. I self-taught
-                      Next.js which proved to be an enjoyable and engaging
+                      Next.js, which proved to be an enjoyable and engaging
                       challenge.
                     </p>
                     <div className="d-flex justify-content-between align-items-center">

@@ -87,8 +87,8 @@ export default function Landing() {
               <h2 className="fw-bold">Hello, I&apos;m George</h2>
               <h4 className="white">
                 I have a wide range of skills and interests which helps me to
-                connect with my projects and understand how to put my clients
-                vision into action.
+                connect with my projects and clients, and understand how to put
+                the vision into action.
               </h4>
               <Fade delay={500} triggerOnce={true}>
                 <Image
@@ -121,7 +121,7 @@ export default function Landing() {
                   <p>
                     I have worked with many modern languages and frameworks
                     including Javascript, HTML, CSS, React.js, Next.js and Node.
-                    I particularly enjoy learning new skills and have recently
+                    I particularly enjoy learning new skills, and have recently
                     completed a web development bootcamp.
                   </p>
                 </div>
