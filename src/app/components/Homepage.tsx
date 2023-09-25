@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import { FaJs, FaHtml5, FaCss3, FaReact, FaNode } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 
-export default function Landing() {
+export default function Homepage() {
   return (
     <div>
       <div className="container py-3 my-4 pb-5" id="hero">
@@ -26,7 +26,7 @@ export default function Landing() {
               <p className="fs-5 mb-4 pt-5">UK-based web developer </p>
               <p className="fs-5 mb-4">
                 {" "}
-                View my projects and CV at the links below or scroll down to
+                View my projects and CV at the links below, or scroll down to
                 learn more
               </p>{" "}
               <div
@@ -85,7 +85,7 @@ export default function Landing() {
           <Fade cascade>
             <div className="col d-flex flex-column align-items-start gap-2">
               <h2 className="fw-bold">Hello, I&apos;m George</h2>
-              <h4 className="white">
+              <h4 className="white" id="aboutMeH4">
                 I have a wide range of skills and interests which helps me to
                 connect with my projects and clients, and understand how to put
                 the vision into action.

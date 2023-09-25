@@ -19,6 +19,8 @@ body {
   height: 100%;
   background-image: linear-gradient(#3b4a60, #000000);
   font-family: "League Spartan", sans-serif;
+  min-height: 100vh;
+  margin-bottom: 60px;
 }
 
 h1,
@@ -136,8 +138,15 @@ a.dropdown-item {
   fill: #05fdfe;
 }
 
-p {
+p,
+#aboutMeH4 {
   margin-left: 10px;
+}
+
+.footer {
+  margin-top: 60px;
+  position: sticky;
+  bottom: 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -165,5 +174,8 @@ p {
   #mainLogo {
     width: 300px;
     height: 300px;
+  }
+  img {
+    object-fit: cover;
   }
 }
