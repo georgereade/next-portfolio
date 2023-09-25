@@ -21,13 +21,6 @@ export default function Landing() {
           />
         </Fade>
         <div className="bg-transparent text-secondary text-center mb-3">
-          {/* <div className="py-5">
-            {" "} */}
-          {/* <Fade delay={1e1} cascade damping={1e-1} triggerOnce={true}>
-              <h1 className="display-5 fw-bold" id="nameHeader">
-                George Reade
-              </h1>
-            </Fade> */}
           <Slide triggerOnce={true}>
             <div className="col-lg-6 mx-auto">
               <p className="fs-5 mb-4 pt-5">UK-based web developer </p>
@@ -84,11 +77,10 @@ export default function Landing() {
               />
             </Fade>
           </div>
-          {/* </div> */}
         </div>
       </div>
       <div className="container px-4 py-5 mt-4">
-        <h2 className="pb-2 border-bottom text-white">About Me</h2>
+        <h2 className="pb-2 border-bottom text-white mt-5 pt-5">About Me</h2>
         <div className="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
           <Fade cascade>
             <div className="col d-flex flex-column align-items-start gap-2">

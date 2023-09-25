@@ -108,7 +108,6 @@ a.dropdown-item {
   margin: 10px;
   cursor: pointer;
   transition: transform 0.2s;
-  /* color: #31e1f7; */
 }
 
 .icon:hover {
@@ -135,6 +134,10 @@ a.dropdown-item {
 .socialLinks:hover,
 .navSocialLinks:hover {
   fill: #05fdfe;
+}
+
+p {
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 1000px) {
