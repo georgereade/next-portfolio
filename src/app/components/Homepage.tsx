@@ -86,9 +86,8 @@ export default function Homepage() {
             <div className="col d-flex flex-column align-items-start gap-2">
               <h2 className="fw-bold">Hello, I&apos;m George</h2>
               <h4 className="white" id="aboutMeH4">
-                I have a wide range of skills and interests which helps me to
-                connect with my projects and clients, and understand how to put
-                the vision into action.
+                A wide range of skills and interests helps me to be versatile
+                and flexible.
               </h4>
               <Fade delay={500} triggerOnce={true}>
                 <Image
@@ -119,10 +118,9 @@ export default function Homepage() {
                   </div>
                   <h4 className="fw-semibold mb-0">Web Development</h4>
                   <p>
-                    I have worked with many modern languages and frameworks
-                    including Javascript, HTML, CSS, React.js, Next.js and Node.
-                    I particularly enjoy learning new skills, and have recently
-                    completed a web development bootcamp.
+                    I work with languages and frameworks including Javascript,
+                    HTML, CSS, React.js, Next.js and Node. I enjoy learning new
+                    skills and taking on challenges.
                   </p>
                 </div>
 
@@ -142,11 +140,10 @@ export default function Homepage() {
                   </div>
                   <h4 className="fw-semibold mb-0">Experience</h4>
                   <p>
-                    I have over five years experience in data analysis and
-                    insight roles, which has helped me develop important
-                    technical, client facing and project management skills. This
-                    has helped me to appreciate the importance of testing and
-                    user-centric design.
+                    Six years experience in data analysis and insight roles has
+                    helped me to develop important technical, client facing and
+                    project management skills. This has helped me to appreciate
+                    the importance of testing and user-centric design.
                   </p>
                 </div>
 
@@ -168,7 +165,7 @@ export default function Homepage() {
                       <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z" />
                     </svg>
                   </div>
-                  <h4 className="fw-semibold mb-0">Skills</h4>
+                  <h4 className="fw-semibold mb-0">Other Skills</h4>
                   <p>
                     I love learning foreign languages, and lived in Shanghai for
                     a year while studying Chinese. I also have a strong interest

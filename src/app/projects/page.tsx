@@ -27,9 +27,8 @@ export default function Page() {
                 <h1>Projects</h1>
                 <Fade delay={1000}>
                   <p className="fs-5 mb-2">
-                    Here are some examples of my personal projects. I have aimed
-                    to showcase a variety of skills, languages and frameworks
-                    and I am constantly seeking to build on my abilities.
+                    Examples of professional and personal projects which
+                    showcase a variety of skills, languages and frameworks.
                   </p>
                 </Fade>
               </div>
