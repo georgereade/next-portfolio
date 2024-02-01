@@ -17,7 +17,7 @@ export default function Page() {
         <img
           width="100%"
           height="225"
-          src="/breckenhill.png"
+          src="/Breckenhill.png"
           alt="project screenshot"
           onClick={toggleTextBox1}
         />
