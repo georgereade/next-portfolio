@@ -1,7 +1,7 @@
 "use client";
 
 import { Fade } from "react-awesome-reveal";
-import FPLProjectIcons from "../Icon Lists/FPLProjectIcons";
+import BreckenhillIcons from "../Icon Lists/BreckenhillIcons";
 import { useState } from "react";
 
 export default function Page() {
@@ -17,46 +17,38 @@ export default function Page() {
         <img
           width="100%"
           height="225"
-          src="/fpl-react.png"
+          src="/breckenhill.png"
           alt="project screenshot"
           onClick={toggleTextBox1}
         />
         <rect width="100%" height="100%" fill="#55595c"></rect>
         <h6 className="mx-3 mt-1">
-          <strong>FPL React App</strong>
+          <strong>Breckenhill Website</strong>
         </h6>{" "}
         <div className="card-body">
           {" "}
           {isTextBox1Visible && (
             <Fade>
               <p className="card-text text-dark">
-                <strong>React </strong> app which displays gameweek and team
-                stats using the Fantasy Premier League <strong>API</strong>. I
-                used <strong>Node</strong> and <strong>CSS</strong> and deployed
-                on Render.com using a proxy server. Stats will automatically
-                update throughout the season. Please note that this is hosted on
-                a free server, so it may take a minute to load.
+                <strong>Wordpress </strong> site for a wedding and events venue
+                that I took on as a freelance project. There was already an
+                existing site so my main objectives were improving{" "}
+                <strong>
+                  performance, responsiveness, layout and accessibility
+                </strong>
+                . Worked alongside a designer for the color scheme and photos.
               </p>
             </Fade>
           )}
           <div className="d-flex justify-content-between align-items-center mt-2">
             <div className="btn-group">
-              <a href="https://fpl-react-app.onrender.com/">
+              <a href="https://www.breckenhill.co.uk">
                 <button
                   type="button"
                   className="btn btn-sm btn-outline-secondary"
                 >
                   <img src="/eye-solid.svg" height="24" alt="view icon" /> Live
                   Site
-                </button>
-              </a>
-              <a href="https://github.com/georgereade/fpl-react-app">
-                <button
-                  type="button"
-                  className="btn btn-sm btn-outline-secondary"
-                >
-                  <img src="/github.svg" height="24" alt="git icon" /> Source
-                  code
                 </button>
               </a>
             </div>
@@ -72,7 +64,7 @@ export default function Page() {
                 <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
               </svg>
             </div>
-            <FPLProjectIcons />
+            <BreckenhillIcons />
           </div>
         </div>
       </div>
