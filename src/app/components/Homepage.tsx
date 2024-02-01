@@ -21,12 +21,11 @@ export default function Homepage() {
         </Fade>
         <div className="bg-transparent text-secondary text-center mb-3">
           <Slide triggerOnce={true}>
-            <div className="col-lg-6 mx-auto">
+            <div className="col-lg-12 mx-auto">
               <p className="fs-5 mb-4 pt-5">UK-based web developer </p>
               <p className="fs-5 mb-4">
                 {" "}
-                View my projects and CV at the links below, or scroll down to
-                learn more
+                View my projects or find out more about me at the links below
               </p>{" "}
               <div
                 className="d-grid gap-2 d-sm-flex justify-content-sm-center"
@@ -47,7 +46,7 @@ export default function Homepage() {
                     className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold my-1"
                     id="cvbtn"
                   >
-                    CV
+                    About Me
                   </a>
                 </Fade>
               </div>

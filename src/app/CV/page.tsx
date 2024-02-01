@@ -18,8 +18,8 @@ export default function Page() {
               <div className="col d-flex flex-column align-items-start gap-2">
                 <h2 className="fw-bold">Hello, I&apos;m George</h2>
                 <h4 className="white" id="aboutMeH4">
-                  A wide range of skills and interests helps me to be versatile
-                  and flexible.
+                  I have a wide range of skills and interests which helps me to
+                  be versatile and flexible.
                 </h4>
                 <Fade delay={500} triggerOnce={true}>
                   <Image
@@ -52,7 +52,8 @@ export default function Page() {
                     <p>
                       I work with languages and frameworks including Javascript,
                       HTML, CSS, React.js, Next.js and Node. I enjoy learning
-                      new skills and taking on challenges.
+                      new skills and taking on challenges. I also have
+                      experience with CMS tools including Wordpress.
                     </p>
                   </div>
 
@@ -70,16 +71,16 @@ export default function Page() {
                         <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z" />
                       </svg>
                     </div>
-                    <h4 className="fw-semibold mb-0">Experience</h4>
+                    <h4 className="fw-semibold mb-0">Other Experience</h4>
                     <p>
-                      Six years experience in data analysis and insight roles
+                      Six years of experience in data analysis and insight roles
                       has helped me to develop important technical, client
-                      facing and project management skills. This has helped me
-                      to appreciate the importance of testing and user-centric
-                      design.
+                      facing and project management skills. This has also helped
+                      me to appreciate the importance of testing and
+                      user-centric design.
                     </p>
                   </div>
-
+                  {/* 
                   <div className="col d-flex flex-column gap-2">
                     <div className="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
                       <svg
@@ -101,8 +102,8 @@ export default function Page() {
                     <h4 className="fw-semibold mb-0">Other Skills</h4>
                     <p>
                       I love learning foreign languages, and lived in Shanghai
-                      for a year while studying Chinese. I also have a strong
-                      interest in music and play the guitar and drums.
+                      for a year while studying Chinese. I have a passion for
+                      music and play the guitar and drums.
                     </p>
                   </div>
 
@@ -125,7 +126,7 @@ export default function Page() {
                       I am passionate about sports, particularly football and
                       tennis, as well as video games of all varieties.
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </Fade>
