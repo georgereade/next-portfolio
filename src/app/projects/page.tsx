@@ -23,7 +23,7 @@ export default function Page() {
         <Header />
         <section className="bg-transparent py-5 text-center container">
           <div className="row py-lg-5">
-            <Slide>
+            <Slide triggerOnce={true}>
               <div className="col-lg-6 col-md-8 mx-auto pt-5">
                 <h1>Projects</h1>
                 <Fade delay={1000}>
