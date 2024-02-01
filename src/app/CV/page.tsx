@@ -14,7 +14,7 @@ export default function Page() {
         <div className="container px-4 py-5 mt-4">
           <h2 className="pb-2 border-bottom text-white mt-5 pt-5">About Me</h2>
           <div className="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-            <Fade cascade>
+            <Fade cascade triggerOnce={true}>
               <div className="col d-flex flex-column align-items-start gap-2">
                 <h2 className="fw-bold">Hello, I&apos;m George</h2>
                 <h4 className="white" id="aboutMeH4">
@@ -132,13 +132,11 @@ export default function Page() {
             </Fade>
           </div>
         </div>{" "}
-        <div className="py-5 mt-5 container">
-          <Slide triggerOnce={true} delay={500}>
+        <Slide triggerOnce={true} delay={500}>
+          <div className="py-5 mt-5 container">
             <h4>Education</h4>
             <h5>Courses and Bootcamps</h5>
-          </Slide>
-          <ul>
-            <Fade triggerOnce={true} delay={1500}>
+            <ul>
               <li>
                 The Complete 2023 Web Development Bootcamp (Udemy)
                 <a href="https://www.udemy.com/certificate/UC-c255844f-ef51-4b45-8575-5083307947fa/">
@@ -161,11 +159,8 @@ export default function Page() {
                   Link to certificate
                 </a>
               </li>
-            </Fade>
-          </ul>
-          <Fade triggerOnce={true} delay={1500}>
+            </ul>
             <h5>University of Leeds: Chinese 2013 - 2017</h5>
-
             <ul>
               <li>
                 Comprehensive Chinese course, primarily focused on learning
@@ -178,13 +173,9 @@ export default function Page() {
                 and interest in coding and data science.
               </li>
             </ul>
-          </Fade>
-          <hr />
-          <Slide triggerOnce={true} delay={500}>
+            <hr />
             <h4>Experience</h4>
             <h5>Penta Group: Insight Director 2018 - Present</h5>
-          </Slide>
-          <Fade triggerOnce={true} delay={1500}>
             <ul>
               <li>
                 Scope, oversee and plan insight reports and marketing projects.
@@ -209,25 +200,16 @@ export default function Page() {
               </li>
               <li>Lead the introduction of new automation tools.</li>
             </ul>
-          </Fade>
-          <hr />
-          <Slide triggerOnce={true} delay={500}>
+            <hr />
             <h4>Skills</h4>
-          </Slide>
-          <Fade triggerOnce={true} delay={1500}>
             <p>
               Javascript / HTML / CSS / React.js / Next.js / Node.js / Chinese
               (Mandarin) / Excel / SQL / Presentations / Data Visualisation
-            </p>
-          </Fade>
-          <Slide triggerOnce={true} delay={500}>
-            {" "}
+            </p>{" "}
             <h4>Interests</h4>
-          </Slide>
-          <Fade triggerOnce={true} delay={1500}>
             <p>Sports / Music / Technology / Languages / Video Games</p>
-          </Fade>
-        </div>
+          </div>
+        </Slide>
       </div>
       <Footer />
     </div>
