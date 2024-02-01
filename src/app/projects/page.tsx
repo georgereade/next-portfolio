@@ -28,7 +28,7 @@ export default function Page() {
                 <h1>Projects</h1>
                 <Fade delay={1000}>
                   <p className="fs-5 mb-2">
-                    Examples of professional and personal projects which
+                    Examples of my freelance and personal projects which
                     showcase a variety of skills, languages and frameworks.
                   </p>
                 </Fade>

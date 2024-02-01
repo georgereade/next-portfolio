@@ -59,7 +59,7 @@ export default function Header() {
               href="CV"
               className={usePathname() === "/CV" ? "activeCV" : ""}
             >
-              CV
+              About Me
             </Nav.Link>
             <NavDropdown title="Contact" id="basic-nav-dropdown">
               <NavDropdown.Item href="mailto:georgereade@hotmail.co.uk">

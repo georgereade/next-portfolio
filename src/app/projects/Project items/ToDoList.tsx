@@ -45,8 +45,7 @@ export default function Page() {
                   type="button"
                   className="btn btn-sm btn-outline-secondary"
                 >
-                  <img src="/eye-solid.svg" height="24" alt="view icon" /> Live
-                  Site
+                  <img src="/eye-solid.svg" height="24" alt="view icon" /> View
                 </button>
               </a>
               <a href="https://github.com/georgereade/Portfolio/tree/main/projects/Hosted-To-Do-List">
