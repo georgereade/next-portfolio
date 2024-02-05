@@ -60,6 +60,7 @@ export default function Page() {
               </a>
             </div>
             <div onClick={toggleTextBox1}>
+              Expand
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"

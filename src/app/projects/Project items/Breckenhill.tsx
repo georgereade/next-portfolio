@@ -31,8 +31,8 @@ export default function Page() {
             <Fade>
               <p className="card-text text-dark">
                 <strong>Wordpress </strong> site for a wedding and events venue
-                that I took on as a freelance project. There was already an
-                existing site so my main objectives were improving{" "}
+                that I took on as a freelance project. Redeveloped and
+                redesigned an existing site, focused on improving{" "}
                 <strong>
                   performance, responsiveness, layout and accessibility
                 </strong>
@@ -52,6 +52,7 @@ export default function Page() {
               </a>
             </div>
             <div onClick={toggleTextBox1}>
+              Expand
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"

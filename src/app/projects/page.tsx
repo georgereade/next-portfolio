@@ -26,7 +26,7 @@ export default function Page() {
             <Slide triggerOnce={true}>
               <div className="col-lg-6 col-md-8 mx-auto pt-5">
                 <h1>Projects</h1>
-                <Fade delay={1000}>
+                <Fade delay={1000} triggerOnce={true}>
                   <p className="fs-5 mb-2">
                     Examples of my freelance and personal projects which
                     showcase a variety of skills, languages and frameworks.
