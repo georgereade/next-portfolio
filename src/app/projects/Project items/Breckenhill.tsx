@@ -52,6 +52,7 @@ export default function Page() {
               </a>
             </div>
             <div onClick={toggleTextBox1}>
+              Expand
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -62,7 +63,6 @@ export default function Page() {
               >
                 <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
               </svg>
-              Expand
             </div>
             <BreckenhillIcons />
           </div>
