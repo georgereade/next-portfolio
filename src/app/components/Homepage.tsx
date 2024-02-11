@@ -3,7 +3,6 @@
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import Footer from "./Footer";
-import Contact from "./Contact";
 import { FaJs, FaHtml5, FaCss3, FaReact, FaNode } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 
@@ -78,7 +77,6 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-      <Contact />
       <Footer />
     </div>
   );
