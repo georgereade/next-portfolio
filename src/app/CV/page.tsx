@@ -3,6 +3,7 @@
 import Header from "../components/Header";
 import React from "react";
 import { Slide, Fade } from "react-awesome-reveal";
+import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Image from "next/image";
 
@@ -211,6 +212,7 @@ export default function Page() {
           </div>
         </Slide>
       </div>
+      <Contact />
       <Footer />
     </div>
   );
