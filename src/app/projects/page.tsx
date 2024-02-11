@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Slide, Fade, Flip } from "react-awesome-reveal";
 import PortfolioIcons from "./Icon Lists/PortfolioIcons";
+import Contact from "../components/Contact";
 import { useState } from "react";
 import FPLReact from "./Project items/FPLReact";
 import Breckenhill from "./Project items/Breckenhill";
@@ -49,6 +50,7 @@ export default function Page() {
           </Fade>
         </div>
       </div>
+      <Contact />
       <Footer />
     </main>
   );
