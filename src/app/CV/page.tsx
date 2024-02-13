@@ -20,7 +20,8 @@ export default function Page() {
                 <h2 className="fw-bold">Hello, I&apos;m George</h2>
                 <h4 className="white" id="aboutMeH4">
                   I have a wide range of skills and interests which helps me to
-                  be versatile and flexible.
+                  be versatile and flexible. Available for any freelance
+                  projects or full time roles.
                 </h4>
                 <Fade delay={500} triggerOnce={true}>
                   <Image

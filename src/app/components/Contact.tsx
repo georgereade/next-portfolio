@@ -10,9 +10,9 @@ export default function Homepage() {
         <div className="my-5 animate__animated animate__backInUp">
           <div className="p-5 text-center bg-body-tertiary">
             <div className="container py-5">
-              <h1 className="text-white">Contact Me</h1>
+              <h1 className="text-white">Contact</h1>
               <p className="col-lg-8 mx-auto lead">
-                Follow the links below to get in touch
+                Make an enquiry or ask me a question
               </p>
               <div className="justify-content-between">
                 <ul className="nav col-md-12 justify-content-center list-unstyled d-flex">

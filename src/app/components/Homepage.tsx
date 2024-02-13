@@ -24,7 +24,7 @@ export default function Homepage() {
               <p className="fs-5 mb-4 pt-5">UK-based web developer </p>
               <p className="fs-5 mb-4">
                 {" "}
-                View my projects or find out more about me at the links below
+                View my projects or find out more about me
               </p>{" "}
               <div
                 className="d-grid gap-2 d-sm-flex justify-content-sm-center"
