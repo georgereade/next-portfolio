@@ -24,7 +24,7 @@ export default function Page() {
         />
         <rect width="100%" height="100%" fill="#55595c"></rect>
         <h6 className="mx-3 mt-1">
-          <strong>Element Consultants Website</strong>
+          <strong>Element Consultants</strong>
         </h6>{" "}
         <div className="card-body">
           {" "}
