@@ -33,8 +33,8 @@ export default function Page() {
               <p className="card-text text-dark">
                 Northern Ireland-based environmental consultancy. I used a clean
                 and modern design with large clickable images. The colour scheme
-                draws from the company's logo, and other design choices such as
-                fonts focused on being clear and professional. Designed with{" "}
+                draws from the company&apos; logo, and other design choices such
+                as fonts focused on being clear and professional. Designed with{" "}
                 <strong>Wordpress, custom CSS and JavaScript.</strong>
               </p>
             </Fade>
