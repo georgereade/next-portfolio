@@ -1,7 +1,7 @@
 "use client";
 
 import { Fade } from "react-awesome-reveal";
-import BreckenhillIcons from "../Icon Lists/BreckenhillIcons";
+import CarLandingIcons from "../Icon Lists/CarLandingIcons";
 import { useState } from "react";
 
 export default function Page() {
@@ -71,7 +71,7 @@ export default function Page() {
                 <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
               </svg>
             </div>
-            <BreckenhillIcons />
+            <CarLandingIcons />
           </div>
         </div>
       </div>
