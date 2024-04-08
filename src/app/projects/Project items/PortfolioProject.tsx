@@ -59,7 +59,7 @@ export default function Page() {
                 </button>
               </a>
             </div>
-            <div onClick={toggleTextBox3}>
+            <div onClick={toggleTextBox3} className="pointer">
               Expand
               <svg
                 xmlns="http://www.w3.org/2000/svg"
