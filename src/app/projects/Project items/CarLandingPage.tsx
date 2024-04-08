@@ -50,6 +50,14 @@ export default function Page() {
                 </button>
               </a>
             </div>
+            <a href="https://github.com/georgereade/Car-landing-page">
+              <button
+                type="button"
+                className="btn btn-sm btn-outline-secondary"
+              >
+                <img src="/github.svg" height="24" alt="git icon" /> Source code
+              </button>
+            </a>
             <div onClick={toggleTextBox1} className="pointer">
               Expand
               <svg
