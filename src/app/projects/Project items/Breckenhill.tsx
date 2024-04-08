@@ -31,13 +31,14 @@ export default function Page() {
           {isTextBox1Visible && (
             <Fade>
               <p className="card-text text-dark">
-                <strong>Wordpress </strong> site for a wedding and events venue
-                that I took on as a freelance project. Redeveloped and
-                redesigned an existing site, focused on improving{" "}
+                Wedding and events venue. Redeveloped and redesigned an existing{" "}
+                <strong>Wordpress </strong> site, focused on improving{" "}
                 <strong>
                   performance, responsiveness, layout and accessibility
                 </strong>
-                . Worked alongside a designer for the color scheme and photos.
+                . Uses a bright and bold colour scheme, with classic serif
+                fonts. I worked alongside a designer for the colour scheme and
+                photos.
               </p>
             </Fade>
           )}
