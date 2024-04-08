@@ -31,7 +31,7 @@ export default function Page() {
           {isTextBox1Visible && (
             <Fade>
               <p className="card-text text-dark">
-                Showcase your company&apos;'s new product or service. In this
+                Showcase your company&apos;s new product or service. In this
                 example, the design is clean and precise to reflect the product,
                 which also inspires the colour scheme and navbar. This page is
                 built with responsiveness and accessibility as core priorities.
