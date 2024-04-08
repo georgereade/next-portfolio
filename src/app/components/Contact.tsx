@@ -1,18 +1,18 @@
 "use client";
 
 import React from "react";
-import { Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 export default function Homepage() {
   return (
     <div>
-      <Slide triggerOnce={true} delay={200}>
+      <Fade triggerOnce={true} delay={200}>
         <div className="my-5 animate__animated animate__backInUp">
           <div className="p-5 text-center bg-body-tertiary">
             <div className="container py-5">
               <h1 className="text-white">Contact</h1>
               <p className="col-lg-8 mx-auto lead">
-                Make an enquiry or ask me a question
+                Use the links below to get in touch
               </p>
               <div className="justify-content-between">
                 <ul className="nav col-md-12 justify-content-center list-unstyled d-flex">
@@ -64,7 +64,7 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-      </Slide>
+      </Fade>
     </div>
   );
 }

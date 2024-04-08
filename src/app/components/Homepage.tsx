@@ -22,10 +22,10 @@ export default function Homepage() {
           <Slide triggerOnce={true}>
             <div className="col-lg-12 mx-auto">
               <p className="fs-5 mb-4 pt-5">UK-based web developer </p>
-              <p className="fs-5 mb-4">
+              {/* <p className="fs-5 mb-4">
                 {" "}
                 View my projects or find out more about me
-              </p>{" "}
+              </p>{" "} */}
               <div
                 className="d-grid gap-2 d-sm-flex justify-content-sm-center"
                 id="indexbtns"

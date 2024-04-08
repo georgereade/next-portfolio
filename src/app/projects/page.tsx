@@ -7,6 +7,7 @@ import Contact from "../components/Contact";
 import { useState } from "react";
 import FPLReact from "./Project items/FPLReact";
 import Breckenhill from "./Project items/Breckenhill";
+import CarLandingPage from "./Project items/CarLandingPage";
 import Element from "./Project items/Element";
 import PortfolioProject from "./Project items/PortfolioProject";
 
@@ -28,8 +29,8 @@ export default function Page() {
                 <h1>Projects</h1>
                 <Fade delay={1000} triggerOnce={true}>
                   <p className="fs-5 mb-2">
-                    Examples of my freelance and personal projects which
-                    showcase a variety of skills, languages and frameworks.
+                    Freelance and personal projects which showcase a variety of
+                    skills, languages and frameworks.
                   </p>
                 </Fade>
               </div>
@@ -42,6 +43,7 @@ export default function Page() {
               <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <Element />
                 <Breckenhill />
+                <CarLandingPage />
                 <FPLReact />
                 <PortfolioProject />
               </div>
