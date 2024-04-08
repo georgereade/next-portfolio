@@ -20,6 +20,7 @@ export default function Page() {
           src="/to-do-list.png"
           alt="project screenshot"
           onClick={toggleTextBox2}
+          className="pointer"
         />
         <rect width="100%" height="100%" fill="#55595c"></rect>
         <h6 className="mx-3 mt-1">

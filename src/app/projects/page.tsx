@@ -3,12 +3,11 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Slide, Fade, Flip } from "react-awesome-reveal";
-import PortfolioIcons from "./Icon Lists/PortfolioIcons";
 import Contact from "../components/Contact";
 import { useState } from "react";
 import FPLReact from "./Project items/FPLReact";
 import Breckenhill from "./Project items/Breckenhill";
-import ToDoList from "./Project items/ToDoList";
+import Element from "./Project items/Element";
 import PortfolioProject from "./Project items/PortfolioProject";
 
 export default function Page() {
@@ -41,9 +40,9 @@ export default function Page() {
           <Fade cascade delay={1500}>
             <div className="container pb-0 mb-0">
               <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <Element />
                 <Breckenhill />
                 <FPLReact />
-                <ToDoList />
                 <PortfolioProject />
               </div>
             </div>
