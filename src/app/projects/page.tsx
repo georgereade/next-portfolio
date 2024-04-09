@@ -1,9 +1,6 @@
 "use client";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { Slide, Fade } from "react-awesome-reveal";
-import Contact from "../components/Contact";
 import { useState } from "react";
 import FPLReact from "./Project items/FPLReact";
 import Breckenhill from "./Project items/Breckenhill";
@@ -21,7 +18,6 @@ export default function Page() {
   return (
     <main>
       <div className="container">
-        <Header />
         <section className="bg-transparent py-5 text-center container">
           <div className="row py-lg-5">
             <Slide triggerOnce={true}>
@@ -51,8 +47,6 @@ export default function Page() {
           </Fade>
         </div>
       </div>
-      <Contact />
-      <Footer />
     </main>
   );
 }
