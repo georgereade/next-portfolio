@@ -2,7 +2,7 @@
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { Slide, Fade, Flip } from "react-awesome-reveal";
+import { Slide, Fade } from "react-awesome-reveal";
 import Contact from "../components/Contact";
 import { useState } from "react";
 import FPLReact from "./Project items/FPLReact";
