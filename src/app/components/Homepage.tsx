@@ -19,7 +19,7 @@ export default function Homepage() {
           />
         </Fade>
         <div className="bg-transparent text-secondary text-center mb-3">
-          <Slide triggerOnce={true}>
+          <Fade triggerOnce={true}>
             <div className="col-lg-12 mx-auto">
               <p className="fs-5 mb-4 pt-5">UK-based web developer </p>
               {/* <p className="fs-5 mb-4">
@@ -50,9 +50,9 @@ export default function Homepage() {
                 </Fade>
               </div>
             </div>
-          </Slide>
+          </Fade>
           <div className="icon-row mb-4 mt-5">
-            <Fade cascade delay={500} damping={0.2}>
+            <Fade cascade delay={500} damping={0.2} triggerOnce={true}>
               {" "}
               <FaJs
                 className="icon techIcon"

@@ -20,7 +20,7 @@ export default function Page() {
       <div className="container">
         <section className="bg-transparent py-5 text-center container">
           <div className="row py-lg-5">
-            <Slide triggerOnce={true}>
+            <Fade triggerOnce={true}>
               <div className="col-lg-6 col-md-8 mx-auto pt-5">
                 <h1>Projects</h1>
                 <Fade delay={1000} triggerOnce={true}>
@@ -30,11 +30,11 @@ export default function Page() {
                   </p>
                 </Fade>
               </div>
-            </Slide>
+            </Fade>
           </div>
         </section>
         <div className="album pt-1 bg-body-tertiary bg-transparent">
-          <Fade cascade delay={1500}>
+          <Fade cascade delay={1500} triggerOnce={true}>
             <div className="container pb-0 mb-0">
               <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <Element />
