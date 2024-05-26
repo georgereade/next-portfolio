@@ -16,15 +16,15 @@ export default function Page() {
   };
 
   return (
-    <main>
-      <div className="container">
-        <section className="bg-transparent py-5 text-center container">
+    <section className="bg-gray-700 py-6 mt-12 md:mt-4">
+      <div className="container" id="projects-section">
+        <section className="bg-transparent pb-5 text-center container">
           <div className="row py-lg-5">
             <Fade triggerOnce={true}>
               <div className="col-lg-6 col-md-8 mx-auto pt-5">
-                <h1>Projects</h1>
-                <Fade delay={1000} triggerOnce={true}>
-                  <p className="fs-5 mb-2">
+                <h1 className="text-5xl">My Work</h1>
+                <Fade delay={100} triggerOnce={true}>
+                  <p className="text-xl md:text-2xl pb-2 leading-loose">
                     Freelance and personal projects which showcase a variety of
                     skills, languages and frameworks.
                   </p>
@@ -34,7 +34,7 @@ export default function Page() {
           </div>
         </section>
         <div className="album pt-1 bg-body-tertiary bg-transparent">
-          <Fade cascade delay={1500} triggerOnce={true}>
+          <Fade cascade delay={200} triggerOnce={true}>
             <div className="container pb-0 mb-0">
               <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <Element />
@@ -47,6 +47,6 @@ export default function Page() {
           </Fade>
         </div>
       </div>
-    </main>
+    </section>
   );
 }

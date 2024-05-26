@@ -9,8 +9,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <div>
-      <Header />
+    <section className="bg-emerald-950">
       <div>
         <div className="container px-4 py-5 mt-4">
           <h2 className="pb-2 border-bottom text-white mt-5 pt-5">About Me</h2>
@@ -167,6 +166,6 @@ export default function Page() {
       </div>
       <Contact />
       <Footer />
-    </div>
+    </section>
   );
 }

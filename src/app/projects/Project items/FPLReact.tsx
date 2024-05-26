@@ -47,7 +47,7 @@ export default function Page() {
                   type="button"
                   className="btn btn-sm btn-outline-secondary"
                 >
-                  <img src="/eye-solid.svg" height="24" alt="view icon" /> View
+                  <img src="/eye-solid.svg" height="24" alt="view icon" /> Visit
                 </button>
               </a>
               <a href="https://github.com/georgereade/fpl-react-app">
@@ -55,8 +55,13 @@ export default function Page() {
                   type="button"
                   className="btn btn-sm btn-outline-secondary"
                 >
-                  <img src="/github.svg" height="24" alt="git icon" /> Source
-                  code
+                  <img
+                    src="/github.svg"
+                    height="24"
+                    width="24"
+                    alt="git icon"
+                  />{" "}
+                  Source code
                 </button>
               </a>
             </div>

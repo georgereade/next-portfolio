@@ -50,17 +50,17 @@ export default function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
-              href="projects"
+              href="#projects-section"
               className={usePathname() === "/projects" ? "activeProjects" : ""}
             >
               Projects
             </Nav.Link>
-            <Nav.Link
+            {/* <Nav.Link
               href="CV"
               className={usePathname() === "/CV" ? "activeCV" : ""}
             >
               About Me
-            </Nav.Link>
+            </Nav.Link> */}
             <NavDropdown title="Contact" id="basic-nav-dropdown">
               <NavDropdown.Item href="mailto:georgereade@hotmail.co.uk">
                 Email

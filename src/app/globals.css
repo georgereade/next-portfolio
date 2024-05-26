@@ -1,3 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
 html,
 body {
   max-width: 100vw;
@@ -17,10 +35,9 @@ body {
 
 body {
   height: 100%;
-  background-image: linear-gradient(#3b4a60, #000000);
+  background-image: linear-gradient(#04081e, #000000);
   font-family: "League Spartan", sans-serif;
   min-height: 100vh;
-  margin-bottom: 60px;
 }
 
 h1,
@@ -50,7 +67,6 @@ li,
 }
 
 .profilepic {
-  height: 200px;
   border-radius: 50%;
 }
 
@@ -130,7 +146,6 @@ a.dropdown-item {
 #hero {
   display: flex;
   align-items: center;
-  flex-direction: column;
 }
 
 .socialLinks:hover,
@@ -144,9 +159,11 @@ p,
 }
 
 .footer {
-  margin-top: 60px;
+  padding-top: 60px;
   position: sticky;
   bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -168,13 +185,10 @@ p,
     display: none;
   }
   #hero {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     display: inline-flex;
   }
-  #mainLogo {
-    width: 300px;
-    height: 300px;
-  }
+
   img {
     object-fit: cover;
   }

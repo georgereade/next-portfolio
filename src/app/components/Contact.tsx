@@ -2,16 +2,17 @@
 
 import React from "react";
 import { Fade } from "react-awesome-reveal";
+import Image from "next/image";
 
 export default function Homepage() {
   return (
-    <div>
+    <section className="bg-emerald-950" id="contact-section">
       <Fade triggerOnce={true} delay={200}>
-        <div className="my-5 animate__animated animate__backInUp">
+        <div className="py-5 animate__animated animate__backInUp">
           <div className="p-5 text-center bg-body-tertiary">
             <div className="container py-5">
-              <h1 className="text-white">Contact</h1>
-              <p className="col-lg-8 mx-auto lead">
+              <h1 className="text-white text-5xl">Contact</h1>
+              <p className="col-lg-8 mx-auto lead leading-loose">
                 Use the links below to get in touch
               </p>
               <div className="justify-content-between">
@@ -61,10 +62,19 @@ export default function Homepage() {
                   </li>
                 </ul>
               </div>
+              <div className="flex flex-col items-center pt-12">
+                <Image
+                  src="/me-on-bike2.jpg"
+                  className="profilepic"
+                  alt="picture of me"
+                  width="250"
+                  height="250"
+                />
+              </div>
             </div>
           </div>
         </div>
       </Fade>
-    </div>
+    </section>
   );
 }
