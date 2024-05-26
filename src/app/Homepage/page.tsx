@@ -26,7 +26,7 @@ export default function Homepage() {
                 for you
               </p>
               <div
-                className="d-grid gap-2 d-sm-flex justify-content-sm-center"
+                className="d-grid gap-2 d-sm-flex flex-row justify-content-sm-center"
                 id="indexbtns"
               >
                 <Fade delay={800} triggerOnce={true}>
