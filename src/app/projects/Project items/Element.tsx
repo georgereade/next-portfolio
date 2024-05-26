@@ -32,10 +32,10 @@ export default function Page() {
             <Fade>
               <p className="card-text text-dark">
                 Northern Ireland-based environmental consultancy. I used a clean
-                and modern design with large clickable images. The colour scheme
-                draws from the company&apos;s logo, and other design choices
-                such as fonts focused on being clear and professional. Designed
-                with <strong>Wordpress, custom CSS and JavaScript.</strong>
+                and modern design with large images. The colour scheme draws
+                from the company&apos;s logo, and other design choices such as
+                fonts focused on being clear and professional. Designed with{" "}
+                <strong>Wordpress, custom CSS and JavaScript.</strong>
               </p>
             </Fade>
           )}
@@ -50,14 +50,14 @@ export default function Page() {
                 </button>
               </a>
             </div>
-            <div onClick={toggleTextBox1} className="pointer">
+            <div onClick={toggleTextBox1} className="pointer flex flex-row">
               Expand
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 fill="currentColor"
-                className="bi bi-three-dots"
+                className="bi bi-three-dots mt-1 mx-2"
                 viewBox="0 0 16 16"
               >
                 <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />

@@ -12,7 +12,7 @@ export default function Page() {
   };
 
   return (
-    <div className="col">
+    <div className="hidden md:block col">
       <div className="card shadow-sm">
         <img
           width="100%"
@@ -57,22 +57,22 @@ export default function Page() {
                 >
                   <img
                     src="/github.svg"
-                    height="24"
-                    width="24"
+                    height="22"
+                    width="22"
                     alt="git icon"
                   />{" "}
                   Source code
                 </button>
               </a>
             </div>
-            <div onClick={toggleTextBox1} className="pointer">
+            <div onClick={toggleTextBox1} className="pointer flex flex-row">
               Expand
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 fill="currentColor"
-                className="bi bi-three-dots"
+                className="bi bi-three-dots mt-1 mx-2"
                 viewBox="0 0 16 16"
               >
                 <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />

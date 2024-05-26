@@ -3,6 +3,7 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Image from "next/image";
+import Mystack from "./Mystack";
 
 export default function Homepage() {
   return (
@@ -64,7 +65,7 @@ export default function Homepage() {
               </div>
               <div className="flex flex-col items-center pt-12">
                 <Image
-                  src="/me-on-bike2.jpg"
+                  src="/negroni.jpg"
                   className="profilepic"
                   alt="picture of me"
                   width="250"
@@ -75,6 +76,7 @@ export default function Homepage() {
           </div>
         </div>
       </Fade>
+      <Mystack />
     </section>
   );
 }

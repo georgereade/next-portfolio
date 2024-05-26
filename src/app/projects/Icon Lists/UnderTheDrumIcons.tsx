@@ -5,7 +5,7 @@ import Tooltip from "@mui/material/Tooltip";
 import InfoIcon from "@mui/icons-material/Info";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
 
-export default function PortfolioIcons() {
+export default function UnderTheDrumIcons() {
   const [open, setOpen] = useState(false);
 
   const handleTooltipClose = () => {

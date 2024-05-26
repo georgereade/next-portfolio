@@ -1,8 +1,8 @@
 "use client";
 
 import { Fade } from "react-awesome-reveal";
-import CarLandingIcons from "../Icon Lists/CarLandingIcons";
 import { useState } from "react";
+import UnderTheDrumIcons from "../Icon Lists/UnderTheDrumIcons";
 
 export default function Page() {
   const [isTextBox1Visible, setTextBox1Visible] = useState(false);
@@ -12,55 +12,39 @@ export default function Page() {
   };
 
   return (
-    <div className="hidden md:block col">
+    <div className="col">
       <div className="card shadow-sm">
         <img
           width="100%"
           height="225"
-          src="/CarLanding.png"
+          src="/underthedrum.png"
           alt="project screenshot"
           onClick={toggleTextBox1}
           className="pointer"
         />
+        <rect width="100%" height="100%" fill="#55595c"></rect>
         <h6 className="mx-3 mt-1">
-          <strong>Car Landing Page</strong>
+          <strong>Under The Drum</strong>
         </h6>{" "}
         <div className="card-body">
           {" "}
           {isTextBox1Visible && (
             <Fade>
               <p className="card-text text-dark">
-                A demonstration of how I can showcase your company&apos;s new
-                product or service. In this example, the design is clean and
-                precise to mirror the car, which also inspires the colour scheme
-                and navbar. This page is built with responsiveness and
-                accessibility as core priorities.
+                A website for an upcoming festival built with Next.js and
+                Tailwind CSS. Uses the Stripe API integration for secure
+                payments.
               </p>
             </Fade>
           )}
           <div className="d-flex justify-content-between align-items-center mt-2">
             <div className="btn-group">
-              <a href="https://georgereade.github.io/Car-landing-page/">
+              <a href="https://www.underthedrum.co.uk">
                 <button
                   type="button"
                   className="btn btn-sm btn-outline-secondary"
                 >
                   <img src="/eye-solid.svg" height="24" alt="view icon" /> Visit
-                </button>
-              </a>
-              <a href="https://github.com/georgereade/Car-landing-page">
-                <button
-                  type="button"
-                  className="btn btn-sm btn-outline-secondary"
-                >
-                  <img
-                    src="/github.svg"
-                    height="22"
-                    width="22"
-                    alt="git icon"
-                    className=""
-                  />{" "}
-                  Source code
                 </button>
               </a>
             </div>
@@ -77,7 +61,7 @@ export default function Page() {
                 <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
               </svg>
             </div>
-            <CarLandingIcons />
+            <UnderTheDrumIcons />
           </div>
         </div>
       </div>

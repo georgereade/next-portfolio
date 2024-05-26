@@ -31,13 +31,13 @@ export default function Page() {
           {isTextBox1Visible && (
             <Fade>
               <p className="card-text text-dark">
-                Wedding and events venue. I redeveloped and redesigned an
-                existing <strong>Wordpress</strong> site, focusing on improving{" "}
+                Wedding and events venue building on an existing{" "}
+                <strong>Wordpress</strong> site, focusing on improving{" "}
                 <strong>
                   performance, responsiveness, layout and accessibility
                 </strong>
-                . I used a bright and bold theme, with classic serif fonts. I
-                worked alongside a designer for the colour scheme and photos.
+                . I used a bright and bold theme, with classic fonts. I worked
+                alongside a designer for the colour scheme and photos.
               </p>
             </Fade>
           )}
@@ -52,14 +52,14 @@ export default function Page() {
                 </button>
               </a>
             </div>
-            <div onClick={toggleTextBox1} className="pointer">
+            <div onClick={toggleTextBox1} className="pointer flex flex-row">
               Expand
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 fill="currentColor"
-                className="bi bi-three-dots"
+                className="bi bi-three-dots mt-1 mx-2"
                 viewBox="0 0 16 16"
               >
                 <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />

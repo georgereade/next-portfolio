@@ -7,7 +7,7 @@ export default function Homepage() {
   return (
     <main>
       <div
-        className="container py-3 my-4 pb-5 items-center place-content-center h-screen flex flex-col md:flex-row"
+        className="container py-3 mt-4 mb-12 pb-5 items-center place-content-center h-screen flex flex-col md:flex-row"
         id="hero"
       >
         <Fade delay={2e1} cascade damping={1e-1} triggerOnce={true}>
@@ -26,13 +26,13 @@ export default function Homepage() {
                 for you
               </p>
               <div
-                className="d-grid gap-2 d-sm-flex flex-row justify-content-sm-center"
+                className="flex flex-row justify-content-sm-center"
                 id="indexbtns"
               >
                 <Fade delay={800} triggerOnce={true}>
                   <a
                     href="#projects-section"
-                    className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold my-1"
+                    className="btn btn-outline-info btn-lg mx-4 me-sm-3 fw-bold my-1"
                     id="projectsbtn"
                   >
                     My Work
@@ -41,7 +41,7 @@ export default function Homepage() {
                 <Fade delay={1100} triggerOnce={true}>
                   <a
                     href="#contact-section"
-                    className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold my-1"
+                    className="btn btn-outline-info btn-lg mx-4 me-sm-3 fw-bold my-1"
                     id="cvbtn"
                   >
                     Contact
