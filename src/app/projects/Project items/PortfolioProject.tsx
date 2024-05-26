@@ -59,8 +59,8 @@ export default function Page() {
                 >
                   <img
                     src="/github.svg"
-                    height="22"
-                    width="22"
+                    height="23"
+                    width="23"
                     alt="git icon"
                   />{" "}
                   Source code

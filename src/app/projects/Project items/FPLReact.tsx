@@ -15,7 +15,7 @@ export default function Page() {
   };
 
   return (
-    <div className="hidden md:block col">
+    <div className="hidden col">
       <div className="card shadow-sm">
         <img
           width="100%"
