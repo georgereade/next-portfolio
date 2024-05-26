@@ -25,7 +25,7 @@ export default function Page() {
               <div className="col-lg-6 col-md-8 mx-auto pt-5">
                 {/* <h1 className="text-5xl">My Work</h1> */}
                 <Fade delay={100} triggerOnce={true}>
-                  <p className="text-xl md:text-2xl pb-2 leading-loose">
+                  <p className="text-xl md:text-2xl pb-2 md:leading-loose">
                     My freelance and personal projects vary in complexity and
                     method, but my core tools are
                     <br />{" "}

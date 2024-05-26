@@ -3,12 +3,15 @@
 import { Fade } from "react-awesome-reveal";
 import PortfolioIcons from "../Icon Lists/PortfolioIcons";
 import { useState } from "react";
+import { CiCircleChevDown } from "react-icons/ci";
 
 export default function Page() {
-  const [isTextBox3Visible, setTextBox3Visible] = useState(false);
+  const [isTextBox1Visible, setTextBox3Visible] = useState(false);
+  const [rotationAngle, setRotationAngle] = useState(0);
 
-  const toggleTextBox3 = () => {
-    setTextBox3Visible(!isTextBox3Visible);
+  const toggleTextBox1 = () => {
+    setTextBox3Visible(!isTextBox1Visible);
+    setRotationAngle(rotationAngle + 180);
   };
 
   return (
@@ -19,7 +22,7 @@ export default function Page() {
           height="225"
           src="/portfolio-ss.png"
           alt="project screenshot"
-          onClick={toggleTextBox3}
+          onClick={toggleTextBox1}
           className="pointer"
         />
         <rect width="100%" height="100%" fill="#55595c"></rect>
@@ -28,7 +31,7 @@ export default function Page() {
         </h6>{" "}
         <div className="card-body">
           {" "}
-          {isTextBox3Visible && (
+          {isTextBox1Visible && (
             <Fade>
               <p className="card-text text-dark">
                 I built this portfolio using the React framework
@@ -64,18 +67,12 @@ export default function Page() {
                 </button>
               </a>
             </div>
-            <div onClick={toggleTextBox3} className="pointer flex flex-row">
-              Expand
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="bi bi-three-dots mt-1 mx-2"
-                viewBox="0 0 16 16"
-              >
-                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-              </svg>
+            <div
+              onClick={toggleTextBox1}
+              className="pointer flex flex-row"
+              style={{ transform: `rotate(${rotationAngle}deg)` }}
+            >
+              <CiCircleChevDown className="text-2xl"></CiCircleChevDown>
             </div>
             <PortfolioIcons />
           </div>

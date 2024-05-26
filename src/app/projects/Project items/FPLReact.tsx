@@ -3,12 +3,15 @@
 import { Fade } from "react-awesome-reveal";
 import FPLProjectIcons from "../Icon Lists/FPLProjectIcons";
 import { useState } from "react";
+import { CiCircleChevDown } from "react-icons/ci";
 
 export default function Page() {
-  const [isTextBox1Visible, setTextBox1Visible] = useState(false);
+  const [isTextBox1Visible, setTextBox3Visible] = useState(false);
+  const [rotationAngle, setRotationAngle] = useState(0);
 
   const toggleTextBox1 = () => {
-    setTextBox1Visible(!isTextBox1Visible);
+    setTextBox3Visible(!isTextBox1Visible);
+    setRotationAngle(rotationAngle + 180);
   };
 
   return (
@@ -65,18 +68,12 @@ export default function Page() {
                 </button>
               </a>
             </div>
-            <div onClick={toggleTextBox1} className="pointer flex flex-row">
-              Expand
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="bi bi-three-dots mt-1 mx-2"
-                viewBox="0 0 16 16"
-              >
-                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-              </svg>
+            <div
+              onClick={toggleTextBox1}
+              className="pointer flex flex-row"
+              style={{ transform: `rotate(${rotationAngle}deg)` }}
+            >
+              <CiCircleChevDown className="text-2xl"></CiCircleChevDown>
             </div>
             <FPLProjectIcons />
           </div>
