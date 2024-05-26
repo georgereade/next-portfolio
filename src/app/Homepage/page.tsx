@@ -21,7 +21,7 @@ export default function Homepage() {
           <Fade triggerOnce={true}>
             <div className="flex flex-col">
               <p className="my-1 md:my-4 text-xl md:text-3xl md:pt-40 leading-loose">
-                Hi, I'm George, a UK-based web developer <br />
+                Hi, I&apos;m George, a UK-based web developer <br />
                 View my work below or get in touch to chat about what I can do
                 for you
               </p>
