@@ -14,7 +14,7 @@ export default function Homepage() {
           <img
             alt="Main logo with my name"
             src="/main-logo.png"
-            className="pt-24 size 1/12 md:w-9/12 place-content-center"
+            className="pt-24 size 1/12 md:w-9/12 place-content-center skew-x-3"
           />
         </Fade>
         <div className="bg-transparent text-secondary text-center mb-6">
@@ -32,7 +32,7 @@ export default function Homepage() {
                 <Fade delay={800} triggerOnce={true}>
                   <a
                     href="#projects-section"
-                    className="btn btn-outline-info btn-lg mx-4 me-sm-3 fw-bold my-1"
+                    className="btn btn-outline-info btn-lg mx-4 me-sm-3 fw-bold my-1 transition ease-in-out"
                     id="projectsbtn"
                   >
                     My Work
@@ -41,7 +41,7 @@ export default function Homepage() {
                 <Fade delay={1100} triggerOnce={true}>
                   <a
                     href="#contact-section"
-                    className="btn btn-outline-info btn-lg mx-4 me-sm-3 fw-bold my-1"
+                    className="btn btn-outline-info btn-lg mx-4 me-sm-3 fw-bold my-1 transition ease-in-out"
                     id="cvbtn"
                   >
                     Contact

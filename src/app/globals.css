@@ -46,13 +46,13 @@ h3,
 a,
 .feature-icon-small,
 .activeProjects {
-  color: #05fdfe;
+  color: #cbd5e1;
 }
 
 h4,
 h5,
 .activeCV {
-  color: #fe8bf3;
+  color: #34d399;
 }
 
 p,
@@ -82,9 +82,19 @@ li,
 }
 
 #cvbtn {
-  --bs-btn-color: #fe8bf3;
-  --bs-btn-hover-bg: #fe8bf3;
-  --bs-btn-border-color: #fe8bf3;
+  --bs-btn-color: #34d399;
+  --bs-btn-hover-bg: #34d399;
+  --bs-btn-border-color: #34d399;
+  --bs-btn-hover-border-color: var(--bs-btn-border-color);
+  --bs-btn-active-bg: var(--bs-btn-border-color);
+  --bs-btn-active-border-color: var(--bs-btn-border-color);
+  --bs-btn-hover-bg: var(--bs-btn-border-color);
+}
+
+#projectsbtn {
+  --bs-btn-color: #cbd5e1;
+  --bs-btn-hover-bg: #cbd5e1;
+  --bs-btn-border-color: #cbd5e1;
   --bs-btn-hover-border-color: var(--bs-btn-border-color);
   --bs-btn-active-bg: var(--bs-btn-border-color);
   --bs-btn-active-border-color: var(--bs-btn-border-color);

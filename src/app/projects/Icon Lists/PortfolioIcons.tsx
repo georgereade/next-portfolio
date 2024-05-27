@@ -31,7 +31,7 @@ export default function PortfolioIcons() {
             disableHoverListener
             title={
               <>
-                <div className="technology-icons">
+                <div className="technology-icons flex flex-col">
                   <FaJs className="icon" title="JavaScript" fill="#EFF52B" />
                   <FaHtml5 className="icon" title="HTML" fill="red" />
                   <FaCss3 className="icon" title="CSS" fill="#2B78F5" />

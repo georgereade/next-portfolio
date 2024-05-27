@@ -70,7 +70,7 @@ export default function Page() {
             </div>
             <div
               onClick={toggleTextBox1}
-              className="pointer flex flex-row"
+              className="pointer flex flex-row transition ease-in-out delay-150"
               style={{ transform: `rotate(${rotationAngle}deg)` }}
             >
               <CiCircleChevDown className="text-2xl"></CiCircleChevDown>
