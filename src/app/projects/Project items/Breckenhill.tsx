@@ -24,6 +24,7 @@ export default function Page() {
           alt="project screenshot"
           onClick={toggleTextBox1}
           className="pointer"
+          draggable="false"
         />
         <rect width="100%" height="100%" fill="#55595c"></rect>
         <h6 className="mx-3 mt-1">
@@ -33,15 +34,17 @@ export default function Page() {
           {" "}
           {isTextBox1Visible && (
             <Fade>
-              <p className="card-text text-dark">
-                Wedding and events venue building on an existing{" "}
-                <strong>WordPress</strong> site, focusing on improving{" "}
-                <strong>
-                  performance, responsiveness, layout and accessibility
-                </strong>
-                . I used a bright and bold theme, with classic fonts. I worked
-                alongside a designer for the colour scheme and photos.
-              </p>
+              <div className="transition ease-in-out delay-500">
+                <p className="card-text text-dark">
+                  Wedding and events venue building on an existing{" "}
+                  <strong>WordPress</strong> site, focusing on improving{" "}
+                  <strong>
+                    performance, responsiveness, layout and accessibility
+                  </strong>
+                  . I used a bright and bold theme, with classic fonts. I worked
+                  alongside a designer for the colour scheme and photos.
+                </p>
+              </div>
             </Fade>
           )}
           <div className="d-flex justify-content-between align-items-center mt-2">

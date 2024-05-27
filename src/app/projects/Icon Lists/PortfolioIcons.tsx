@@ -48,7 +48,10 @@ export default function PortfolioIcons() {
             }
             placement="top"
           >
-            <InfoIcon onClick={handleTooltipOpen}></InfoIcon>
+            <InfoIcon
+              onClick={handleTooltipOpen}
+              className="cursor-pointer"
+            ></InfoIcon>
           </Tooltip>
         </div>
       </ClickAwayListener>
