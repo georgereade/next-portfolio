@@ -35,7 +35,7 @@ export default function Page() {
             <Fade>
               <p className="card-text text-dark">
                 Wedding and events venue building on an existing{" "}
-                <strong>Wordpress</strong> site, focusing on improving{" "}
+                <strong>WordPress</strong> site, focusing on improving{" "}
                 <strong>
                   performance, responsiveness, layout and accessibility
                 </strong>
