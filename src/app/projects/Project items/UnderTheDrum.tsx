@@ -36,7 +36,7 @@ export default function Page() {
               <p className="card-text text-dark">
                 A website for an upcoming festival built with
                 <strong> Next.js</strong> and <strong>Tailwind CSS</strong>.
-                Connects to Stripe's API for secure payments.
+                Connects to Stripe&apos;'s API for secure payments.
               </p>
             </Fade>
           )}
