@@ -17,18 +17,17 @@ export default function Page() {
   };
 
   return (
-    <section className="bg-gray-700 py-6 mt-12 md:mt-4">
-      <div className="container" id="projects-section">
+    <section className="bg-gray-700 py-12" id="projects-section">
+      <div className="container">
         <section className="bg-transparent pb-5 text-center container">
           <div className="row py-lg-5">
             <Fade triggerOnce={true}>
-              <div className="col-lg-6 col-md-8 mx-auto pt-5">
+              <div className="pt-5">
                 {/* <h1 className="text-5xl">My Work</h1> */}
                 <Fade delay={100} triggerOnce={true}>
                   <p className="text-xl md:text-2xl pb-2 md:leading-loose">
                     My freelance and personal projects vary in complexity and
-                    method, but my core tools are
-                    <br />{" "}
+                    method, but my core tools are <br />
                     <span className="font-extrabold text-blue-400">
                       WordPress
                     </span>{" "}
@@ -36,12 +35,19 @@ export default function Page() {
                     <span className="font-extrabold text-emerald-500">
                       React
                     </span>
-                    .<br />
-                    In all of my work, I build with the principles of <br />
-                    <span className="font-extrabold text-orange-300">
-                      accessibility, responsiveness and performance
-                    </span>
                     .
+                  </p>
+                  <p className="text-xl md:text-2xl pb-2 md:leading-loose">
+                    In addition to building your website, I can help to provide
+                    secure hosting under your own domain name.{" "}
+                  </p>
+                  <p className="text-xl md:text-2xl pb-2 md:leading-loose">
+                    Once your website is built I will implement SEO strategies
+                    to help attract traffic and drive business.{" "}
+                  </p>
+                  <p className="text-xl md:text-2xl pb-2 md:leading-loose">
+                    Whether you already have the perfect design idea or want me
+                    to lead the way, we can work together to build your vision.
                   </p>
                 </Fade>
               </div>

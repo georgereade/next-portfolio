@@ -1,6 +1,5 @@
 "use client";
 
-import Header from "../components/Navbar";
 import React from "react";
 import { Slide, Fade } from "react-awesome-reveal";
 import Contact from "../components/Contact";

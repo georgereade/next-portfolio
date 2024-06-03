@@ -41,13 +41,19 @@ body {
   min-height: 100vh;
 }
 
-h1,
 h2,
 h3,
 a,
-.feature-icon-small,
-.activeProjects {
+.feature-icon-small {
   color: #cbd5e1;
+}
+
+.activeProjects {
+  color: rgb(96 165 250);
+}
+
+.activeHome {
+  color: white;
 }
 
 h4,
@@ -59,7 +65,8 @@ h5,
 p,
 ul,
 li,
-.white {
+.white,
+h1 {
   color: white;
 }
 
@@ -93,9 +100,9 @@ li,
 }
 
 #projectsbtn {
-  --bs-btn-color: #cbd5e1;
-  --bs-btn-hover-bg: #cbd5e1;
-  --bs-btn-border-color: #cbd5e1;
+  --bs-btn-color: rgb(96 165 250);
+  --bs-btn-hover-bg: rgb(96 165 250);
+  --bs-btn-border-color: rgb(96 165 250);
   --bs-btn-hover-border-color: var(--bs-btn-border-color);
   --bs-btn-active-bg: var(--bs-btn-border-color);
   --bs-btn-active-border-color: var(--bs-btn-border-color);
@@ -177,13 +184,21 @@ p,
   margin-bottom: 0;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
+/* #nav-logo-area {
+
+} */
+
 @media screen and (max-width: 1000px) {
   #indexbtns {
     justify-content: center;
   }
-  #basic-navbar-nav {
+  /* #basic-navbar-nav {
     background-color: #1c222e;
-  }
+  } */
   .techIcon {
     margin: 15px;
   }
@@ -203,8 +218,4 @@ p,
   img {
     object-fit: cover;
   }
-}
-
-.pointer {
-  cursor: pointer;
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -10,6 +10,8 @@ import { usePathname } from "next/navigation";
 export default function Header() {
   // Set a useState to recognise scrolling, setting a class for the navbar making it opaque
   const [scrolling, setScrolling] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+  const sectionsRef = useRef<{ [key: string]: HTMLElement }>({});
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,20 +31,44 @@ export default function Header() {
   // If scrolling, class set as scrolled
   const navbarClass = scrolling ? "navbar scrolled" : "navbar";
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    const sections = document.querySelectorAll("section");
+    sections.forEach((section) => {
+      observer.observe(section);
+      sectionsRef.current[section.id] = section;
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <Navbar expand="lg" variant="dark" fixed="top" className={navbarClass}>
+    <Navbar variant="dark" fixed="top" className={navbarClass}>
       <Container>
         <Navbar.Brand
-          href="/"
+          href="#hero"
+          id="nav-logo-area"
           // If current path matches, class set as active
-          className={usePathname() === "/" ? "activeHome" : ""}
+          className={activeSection === "hero" ? "activeHome" : ""}
         >
           <img
             alt="FPL React Logo"
-            src="/main-logo.png"
+            src="/electric-blue-tree-bright.jpg"
             width="30"
             height="30"
-            className="d-inline-block align-top"
+            className="d-inline-block align-left"
           />{" "}
           George Reade
         </Navbar.Brand>
@@ -51,27 +77,24 @@ export default function Header() {
           <Nav className="me-auto">
             <Nav.Link
               href="#projects-section"
-              className={usePathname() === "/projects" ? "activeProjects" : ""}
+              active={false}
+              className={
+                activeSection === "projects-section" ? "activeProjects" : ""
+              }
             >
               Projects
             </Nav.Link>
-            {/* <Nav.Link
-              href="CV"
-              className={usePathname() === "/CV" ? "activeCV" : ""}
+            <Nav.Link
+              href="#contact-section"
+              active={false}
+              className={
+                activeSection === "contact-section"
+                  ? "activeCV contact-mobile"
+                  : "contact-mobile"
+              }
             >
-              About Me
-            </Nav.Link> */}
-            <NavDropdown title="Contact" id="basic-nav-dropdown">
-              <NavDropdown.Item href="mailto:georgereade@hotmail.co.uk">
-                Email
-              </NavDropdown.Item>
-              <NavDropdown.Item href="https://www.linkedin.com/in/george-reade-2a1185124">
-                LinkedIn
-              </NavDropdown.Item>
-              <NavDropdown.Item href="https://github.com/georgereade/">
-                Github
-              </NavDropdown.Item>
-            </NavDropdown>
+              Contact
+            </Nav.Link>
           </Nav>
           <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li className="ms-3">
