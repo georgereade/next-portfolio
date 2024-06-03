@@ -24,7 +24,7 @@ export default function Homepage() {
                 I&apos;m George, a UK-based freelance web developer creating
                 professional, modern and affordable websites. <br />
               </h1>
-              <h2 className="pt-4 text-md md:text-2xl">
+              <h2 className="pt-4 text-xl md:text-3xl">
                 {" "}
                 All of my work follows principles of <br />
                 <span className="font-extrabold text-orange-300">
