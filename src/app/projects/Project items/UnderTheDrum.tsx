@@ -34,9 +34,9 @@ export default function Page() {
           {isTextBox1Visible && (
             <Fade>
               <p className="card-text text-dark">
-                A website for an upcoming festival built with Next.js and
-                Tailwind CSS. Uses the Stripe API integration for secure
-                payments.
+                A website for an upcoming festival built with
+                <strong> Next.js</strong> and <strong>Tailwind CSS</strong>.
+                Connects to Stripe's API for secure payments.
               </p>
             </Fade>
           )}

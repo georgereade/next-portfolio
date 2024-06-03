@@ -40,7 +40,7 @@ export default function Header() {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.2, root: null, rootMargin: "0px" }
     );
 
     const sections = document.querySelectorAll("section");

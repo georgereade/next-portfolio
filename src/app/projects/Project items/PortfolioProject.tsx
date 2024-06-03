@@ -36,9 +36,8 @@ export default function Page() {
               <p className="card-text text-dark">
                 I built this portfolio using the React framework
                 <strong> Next.js</strong>, written in{" "}
-                <strong>Typescript</strong> and using <strong>Bootstrap</strong>{" "}
-                for styling. I self-taught Next.js, which proved to be an
-                enjoyable and engaging challenge.
+                <strong>Typescript</strong> and using{" "}
+                <strong>Tailwind CSS</strong> for styling.
               </p>
             </Fade>
           )}

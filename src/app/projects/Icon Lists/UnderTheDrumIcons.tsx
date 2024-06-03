@@ -39,7 +39,7 @@ export default function UnderTheDrumIcons() {
                   <SiNextdotjs className="icon" title="Next.js" fill="white" />
                   <FaNode className="icon" title="Node.js" fill="#66cc33" />
                   <SiTailwindcss
-                    className="icon techIcon"
+                    className="icon"
                     fill="rgb(56, 189, 248)"
                     title="Tailwind CSS"
                   />
