@@ -17,7 +17,7 @@ export default function Mystack() {
     <div className="container flex flex-col text-center">
       <p className="lead leading-loose">My tech stack</p>
       <div className="icon-row pb-6">
-        <Fade cascade delay={500} damping={0.2} triggerOnce={true}>
+        <Fade cascade delay={250} damping={0.1} triggerOnce={true}>
           {" "}
           <FaJs className="icon techIcon" fill="#EFF52B" title="JavaScript" />
           <FaHtml5 className="icon techIcon" fill="red" title="HTML" />

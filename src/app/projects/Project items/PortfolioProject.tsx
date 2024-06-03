@@ -20,7 +20,7 @@ export default function Page() {
         <img
           width="100%"
           height="225"
-          src="/portfolio-ss.png"
+          src="/portfolio.png"
           alt="project screenshot"
           onClick={toggleTextBox1}
           className="pointer"
