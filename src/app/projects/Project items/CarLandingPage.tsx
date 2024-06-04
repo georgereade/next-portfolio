@@ -23,7 +23,7 @@ export default function Page() {
           src="/CarLanding.png"
           alt="project screenshot"
           onClick={toggleTextBox1}
-          className="pointer"
+          className="pointer hover:scale-105 transition ease-in-out rounded-md"
         />
         <h6 className="mx-3 mt-1">
           <strong>Car Landing Page</strong>

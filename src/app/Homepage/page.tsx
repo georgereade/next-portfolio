@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Homepage() {
   return (
-    <main className="bg-[url('/electric-blue-tree.jpg')] bg-center md:bg-left md:bg-cover">
+    <main className="bg-[url('/electric-blue-tree.jpg')] bg-center md:bg-left md:bg-cover bg-fixed">
       <div
         className="container pt-3 items-center place-content-center h-screen flex flex-col md:flex-row"
         id="hero"
@@ -48,7 +48,7 @@ export default function Homepage() {
                 <Fade delay={800} triggerOnce={true}>
                   <a
                     href="#projects-section"
-                    className="btn btn-outline-info btn-lg mx-4 fw-bold my-1 transition ease-in-out w-40 md:w-64"
+                    className="btn btn-outline-info btn-lg mx-4 fw-bold my-1 transition ease-in-out w-40 md:w-64 hover:scale-110"
                     id="projectsbtn"
                   >
                     My Work
@@ -57,7 +57,7 @@ export default function Homepage() {
                 <Fade delay={1100} triggerOnce={true}>
                   <a
                     href="#contact-section"
-                    className="btn btn-outline-info btn-lg mx-4 fw-bold my-1 transition ease-in-out w-40 md:w-64"
+                    className="btn btn-outline-info btn-lg mx-4 fw-bold my-1 transition ease-in-out w-40 md:w-64 hover:scale-110"
                     id="cvbtn"
                   >
                     Contact
