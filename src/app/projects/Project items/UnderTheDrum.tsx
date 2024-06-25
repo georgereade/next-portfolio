@@ -20,10 +20,10 @@ export default function Page() {
         <img
           width="100%"
           height="225"
-          src="/underthedrum.png"
+          src="/utd web.png"
           alt="project screenshot"
           onClick={toggleTextBox1}
-          className="pointer hover:scale-105 transition ease-in-out rounded-md"
+          className="pointer hover:drop-shadow-2xl transition ease-in-out rounded-md"
         />
         <rect width="100%" height="100%" fill="#55595c"></rect>
         <h6 className="mx-3 mt-1">
@@ -36,7 +36,8 @@ export default function Page() {
               <p className="card-text text-dark">
                 A website for an upcoming festival built with
                 <strong> Next.js</strong> and <strong>Tailwind CSS</strong>.
-                Connects to Stripe&apos;s API for secure payments.
+                Connects to Stripe&apos;s API for secure payments. Launching in
+                early July, currently in production.
               </p>
             </Fade>
           )}

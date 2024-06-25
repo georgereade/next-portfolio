@@ -23,7 +23,7 @@ export default function Page() {
           src="/portfolio.png"
           alt="project screenshot"
           onClick={toggleTextBox1}
-          className="pointer hover:scale-105 transition ease-in-out rounded-md"
+          className="pointer hover:drop-shadow-2xl transition ease-in-out rounded-md"
         />
         <rect width="100%" height="100%" fill="#55595c"></rect>
         <h6 className="mx-3 mt-1">

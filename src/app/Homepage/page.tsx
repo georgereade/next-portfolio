@@ -22,7 +22,7 @@ export default function Homepage() {
             <div className="flex flex-col">
               <h1 className="my-1 md:my-4 mx-2 text-xl md:text-3xl md:pt-40 leading-loose">
                 I&apos;m George, a UK-based freelance web developer creating
-                professional, modern and affordable websites. <br />
+                clean, modern and fast websites. <br />
               </h1>
               <h2 className="pt-4 text-xl md:text-3xl">
                 {" "}
@@ -48,7 +48,7 @@ export default function Homepage() {
                 <Fade delay={800} triggerOnce={true}>
                   <a
                     href="#projects-section"
-                    className="btn btn-outline-info btn-lg mx-4 fw-bold my-1 transition ease-in-out w-40 md:w-64 hover:scale-110"
+                    className="btn btn-outline-info btn-lg mx-4 fw-bold my-1 transition ease-in-out w-40 md:w-64 hover:scale-110 delay-50 origin-center"
                     id="projectsbtn"
                   >
                     My Work
@@ -57,7 +57,7 @@ export default function Homepage() {
                 <Fade delay={1100} triggerOnce={true}>
                   <a
                     href="#contact-section"
-                    className="btn btn-outline-info btn-lg mx-4 fw-bold my-1 transition ease-in-out w-40 md:w-64 hover:scale-110"
+                    className="btn btn-outline-info btn-lg mx-4 fw-bold my-1 transition ease-in-out w-40 md:w-64 hover:scale-110 delay-50"
                     id="cvbtn"
                   >
                     Contact

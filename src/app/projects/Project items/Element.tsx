@@ -23,7 +23,7 @@ export default function Page() {
           src="/Element.png"
           alt="project screenshot"
           onClick={toggleTextBox1}
-          className="pointer hover:scale-105 transition ease-in-out rounded-md"
+          className="pointer hover:drop-shadow-2xl transition ease-in-out rounded-md"
         />
         <rect width="100%" height="100%" fill="#55595c"></rect>
         <h6 className="mx-3 mt-1">
@@ -34,11 +34,12 @@ export default function Page() {
           {isTextBox1Visible && (
             <Fade>
               <p className="card-text text-dark">
-                Northern Ireland-based environmental consultancy. I used a clean
-                and modern design with large images. The colour scheme draws
-                from the company&apos;s logo, and other design choices such as
-                fonts focused on being clear and professional. Designed with{" "}
-                <strong>WordPress, custom CSS and JavaScript.</strong>
+                Designed with{" "}
+                <strong>WordPress, custom CSS and JavaScript</strong> for an
+                environmental consultancy. Uses a clean and fresh design with
+                large images. The colour scheme draws from the company&apos;s
+                logo, and other design choices such as fonts focused on being
+                clear and professional.
               </p>
             </Fade>
           )}
