@@ -20,35 +20,38 @@ export default function Homepage() {
         <div className="bg-transparent text-secondary text-center mb-6">
           <Fade triggerOnce={true}>
             <div className="flex flex-col">
-              <h1 className="my-1 md:my-4 mx-2 text-xl md:text-3xl md:pt-40 leading-loose">
-                I&apos;m George, a UK-based freelance web developer creating
-                clean, modern and fast websites. <br />
+              <h1 className="my-1 md:my-4 py-12 mx-2 text-xl md:text-3xl md:pt-40 leading-loose">
+                UK-based freelance web developer creating clean, modern and fast
+                web apps
+                <br />
               </h1>
-              <h2 className="pt-4 text-xl md:text-3xl">
-                {" "}
-                All of my work follows principles of <br />
-                <span className="font-extrabold text-orange-300">
-                  accessibility, responsiveness
-                </span>{" "}
-                and{" "}
-                <span className="font-extrabold text-orange-300">
-                  performance
-                </span>
-                .
-              </h2>
-              <p className="py-4 leading-loose text-md md:text-xl">
-                {" "}
-                You can find some examples of my work below or get in touch to
-                see what I can do for you.
-              </p>
+              <div className="flex flex-col rounded-xl backdrop-blur-xl w-full h-fit shadow-orange-300 shadow-md border-2 border-orange-300 z-50">
+                <h2 className="pt-4 text-xl md:text-3xl">
+                  {" "}
+                  All of my work follows principles of <br />
+                  <span className="font-extrabold text-orange-300">
+                    accessibility, responsiveness
+                  </span>{" "}
+                  and{" "}
+                  <span className="font-extrabold text-orange-300">
+                    performance
+                  </span>
+                </h2>
+                <p className="py-4 leading-loose text-md md:text-xl">
+                  {" "}
+                  View the examples below or get in touch to see what I can do
+                  for you
+                </p>
+              </div>
+
               <div
-                className="flex flex-row justify-content-sm-center"
+                className="flex flex-row justify-content-sm-center py-28"
                 id="indexbtns"
               >
                 <Fade delay={800} triggerOnce={true}>
                   <a
                     href="#projects-section"
-                    className="btn btn-outline-info btn-lg mx-4 fw-bold my-1 transition ease-in-out w-40 md:w-64 hover:scale-110 delay-50 origin-center"
+                    className="btn btn-outline-info btn-lg mx-4 fw-bold my-1 transition ease-in-out w-40 md:w-64 hover:scale-110 delay-50 origin-center shadow-xl shadow-blue-500"
                     id="projectsbtn"
                   >
                     My Work
@@ -57,7 +60,7 @@ export default function Homepage() {
                 <Fade delay={1100} triggerOnce={true}>
                   <a
                     href="#contact-section"
-                    className="btn btn-outline-info btn-lg mx-4 fw-bold my-1 transition ease-in-out w-40 md:w-64 hover:scale-110 delay-50"
+                    className="btn btn-outline-info btn-lg mx-4 fw-bold my-1 transition ease-in-out w-40 md:w-64 hover:scale-110 delay-50 shadow-xl shadow-green-500"
                     id="cvbtn"
                   >
                     Contact

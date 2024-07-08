@@ -188,6 +188,10 @@ p,
   cursor: pointer;
 }
 
+.transition-height {
+  transition: height 0.3s ease-in-out;
+}
+
 /* #nav-logo-area {
 
 } */
