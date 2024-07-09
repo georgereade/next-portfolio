@@ -11,12 +11,20 @@ export default function Page() {
           <div className="row py-lg-5">
             <Fade triggerOnce={true}>
               <div className="pt-5">
-                {/* <h1 className="text-5xl">My Work</h1> */}
                 <Fade delay={100} triggerOnce={true} cascade>
+                  <h2 className="text-5xl">Services</h2>
                   <ul>
                     <li>
                       <p className="text-xl md:text-2xl pb-2 md:leading-loose">
-                        Helping to provide{" "}
+                        <span className="text-orange-300">
+                          Designing and building{" "}
+                        </span>
+                        your website.
+                      </p>
+                    </li>
+                    <li>
+                      <p className="text-xl md:text-2xl pb-2 md:leading-loose">
+                        Setting you up with{" "}
                         <span className="text-orange-300">secure hosting</span>{" "}
                         under your own domain name.{" "}
                       </p>
@@ -40,10 +48,9 @@ export default function Page() {
                       </p>
                     </li>
                     <li>
-                      <p className="text-xl md:text-2xl pb-2 md:leading-loose">
-                        Whether you already have the perfect design idea or want
-                        me to lead the way, we can work together to build your
-                        vision.
+                      <p className="text-xl md:text-2xl pb-2 pt-12 md:leading-loose">
+                        Whether you already have the perfect idea or want me to
+                        lead the way, we can work together to build your vision.
                       </p>
                     </li>
                     <li>
@@ -71,6 +78,9 @@ export default function Page() {
           <Fade cascade delay={200} triggerOnce={true}>
             <div className="pb-0 mb-0">
               <div className="w-screen flex flex-col items-center">
+                <h2 className="text-5xl" id="portfolio-section">
+                  Portfolio
+                </h2>
                 <ProjectItems />
               </div>
             </div>

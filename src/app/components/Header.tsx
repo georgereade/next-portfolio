@@ -40,7 +40,7 @@ export default function Header() {
           }
         });
       },
-      { threshold: 0.2, root: null, rootMargin: "0px" }
+      { threshold: 0.6, root: null, rootMargin: "0px" }
     );
 
     const sections = document.querySelectorAll("section");
@@ -76,13 +76,13 @@ export default function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
-              href="#projects-section"
+              href="#portfolio-section"
               active={false}
               className={
-                activeSection === "projects-section" ? "activeProjects" : ""
+                activeSection === "portfolio-section" ? "activeProjects" : ""
               }
             >
-              Projects
+              Portfolio
             </Nav.Link>
             <Nav.Link
               href="#contact-section"

@@ -29,11 +29,6 @@ body {
   }
 }
 
-#hero {
-  height: 90vh;
-  align-content: center;
-}
-
 body {
   height: 100%;
   background-image: linear-gradient(#04081e, #000000);
@@ -68,10 +63,6 @@ li,
 .white,
 h1 {
   color: white;
-}
-
-#hero {
-  opacity: 90%;
 }
 
 .profilepic {
@@ -161,11 +152,6 @@ a.dropdown-item {
   font-size: 50px;
 }
 
-#hero {
-  display: flex;
-  align-items: center;
-}
-
 .socialLinks:hover,
 .navSocialLinks:hover {
   fill: #05fdfe;
@@ -196,6 +182,28 @@ p,
 
 } */
 
+@layer components {
+  .scrollbar::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #e5e7eb;
+    margin: 10px;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #10b981;
+    border-radius: 100vh;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c0a0b9;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   #indexbtns {
     justify-content: center;
@@ -214,10 +222,10 @@ p,
   .navSocialLinks {
     display: none;
   }
-  #hero {
+  /* #hero {
     padding-bottom: 10px;
     display: inline-flex;
-  }
+  } */
 
   img {
     object-fit: cover;

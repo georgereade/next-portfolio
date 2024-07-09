@@ -109,7 +109,7 @@ export default function Page() {
   }, [visibleTextBoxes]);
 
   return (
-    <div className="flex flex-row snap-x w-screen lg:flex-wrap lg:justify-center overflow-x-auto snap-mandatory snap-always h-full">
+    <div className="flex flex-row snap-x w-screen lg:flex-wrap lg:justify-center overflow-x-auto snap-mandatory snap-always h-full scrollbar">
       {cardsData.map((card) => (
         <Card
           key={card.id}
