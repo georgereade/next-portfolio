@@ -5,18 +5,21 @@ import ProjectItems from "./Projectitems/page";
 
 export default function Page() {
   return (
-    <section className="bg-gray-700 py-12 w-screen" id="projects-section">
+    <section
+      className="bg-gray-600 w-screen overflow-x-hidden border-t-8 border-gray-200"
+      id="projects-section"
+    >
       <div className="">
-        <section className="bg-transparent pb-5 text-center">
-          <div className="row py-lg-5">
+        <section className="text-center border-b-8 border-gray-200 px-2 pb-8">
+          <div className="">
             <Fade triggerOnce={true}>
               <div className="pt-5">
                 <Fade delay={100} triggerOnce={true} cascade>
-                  <h2 className="text-5xl">Services</h2>
+                  <h2 className="text-5xl pb-4">Services</h2>
                   <ul>
                     <li>
                       <p className="text-xl md:text-2xl pb-2 md:leading-loose">
-                        <span className="text-orange-300">
+                        <span className="text-orange-300 font-bold">
                           Designing and building{" "}
                         </span>
                         your website.
@@ -25,14 +28,16 @@ export default function Page() {
                     <li>
                       <p className="text-xl md:text-2xl pb-2 md:leading-loose">
                         Setting you up with{" "}
-                        <span className="text-orange-300">secure hosting</span>{" "}
+                        <span className="text-orange-300 font-bold">
+                          secure hosting
+                        </span>{" "}
                         under your own domain name.{" "}
                       </p>
                     </li>
                     <li>
                       <p className="text-xl md:text-2xl pb-2 md:leading-loose">
                         Implementing{" "}
-                        <span className="text-orange-300 ease-in-out delay-10 hover:scale-110">
+                        <span className="text-orange-300 font-bold">
                           SEO strategies
                         </span>{" "}
                         to help attract traffic and drive business.{" "}
@@ -41,7 +46,7 @@ export default function Page() {
                     <li>
                       <p className="text-xl md:text-2xl pb-2 md:leading-loose">
                         Integrating{" "}
-                        <span className="text-orange-300 ease-in-out delay-10 hover:scale-110">
+                        <span className="text-orange-300 font-bold">
                           payment platforms
                         </span>
                         , booking forms and mailing lists.{" "}
@@ -74,11 +79,11 @@ export default function Page() {
             </Fade>
           </div>
         </section>
-        <div>
+        <div className="bg-gray-700 border-b-8 border-gray-200 pb-8">
           <Fade cascade delay={200} triggerOnce={true}>
             <div className="pb-0 mb-0">
               <div className="w-screen flex flex-col items-center">
-                <h2 className="text-5xl" id="portfolio-section">
+                <h2 className="text-5xl pt-8" id="portfolio-section">
                   Portfolio
                 </h2>
                 <ProjectItems />
