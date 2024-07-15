@@ -1,12 +1,11 @@
-import Homepage from "./Homepage/page";
+import Homepage from "./Hero/page";
 import Contact from "./components/Contact";
 import Projects from "./projects/page";
-import "bootstrap/dist/css/bootstrap.css";
 import "./globals.css";
 
 export default function Home() {
   return (
-    <main className="scroll-smooth">
+    <main className="scroll-smooth overflow-x-hidden">
       <Homepage />
       <Projects />
       <Contact />

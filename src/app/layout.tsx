@@ -1,9 +1,9 @@
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 import "./globals.css";
 import "animate.css";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import Header from "./components/Header";
+import Navigationbar from "./components/Navbar2";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
@@ -31,8 +31,8 @@ export default function RootLayout({
           rel="stylesheet"
         ></link>
       </head>
-      <body className="font-body">
-        <Header />
+      <body className="font-body h-full">
+        <Navigationbar />
         {children}
         <Analytics />
         <Footer />

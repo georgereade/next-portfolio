@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useState, useRef, useEffect } from "react";
 import {
   Card,
   CardHeader,
@@ -8,7 +9,6 @@ import {
   Button,
 } from "@nextui-org/react";
 import { Fade } from "react-awesome-reveal";
-import { useState, useRef, useEffect } from "react";
 import { CiCircleChevDown } from "react-icons/ci";
 
 interface CardData {
@@ -81,9 +81,14 @@ const cardsData: CardData[] = [
 ];
 
 export default function Page() {
+  const initialVisibilityState = cardsData.reduce((acc, card) => {
+    acc[card.id] = false;
+    return acc;
+  }, {} as { [key: number]: boolean });
+
   const [visibleTextBoxes, setVisibleTextBoxes] = useState<{
     [key: number]: boolean;
-  }>({});
+  }>(initialVisibilityState);
   const [rotationAngles, setRotationAngles] = useState<{
     [key: number]: number;
   }>({});
@@ -113,10 +118,10 @@ export default function Page() {
       {cardsData.map((card) => (
         <Card
           key={card.id}
-          className="mx-2 lg:mx-24 bg-gray-800 rounded-xl relative min-w-fit lg:min-w-min sm:w-1/3 sm:max-w-1/3 my-4 scroll-mx-0 snap-center"
+          className="mx-2 lg:mx-24 bg-gray-800 rounded-xl relative min-w-fit lg:min-w-min sm:w-3/5 my-4 scroll-mx-0 snap-center"
         >
           <CardHeader>
-            <h4 className="text-xl md:text-3xl font-bold mx-auto border-b border-slate-500">
+            <h4 className="text-xl md:text-3xl font-bold mx-auto border-b border-slate-500 text-emerald-500">
               {card.title}
             </h4>
           </CardHeader>
@@ -130,6 +135,11 @@ export default function Page() {
             <div
               ref={(el) => (contentRefs.current[card.id] = el)}
               className={`overflow-hidden transition-height duration-500 ease-in-out`}
+              style={{
+                height: visibleTextBoxes[card.id]
+                  ? `${contentRefs.current[card.id]?.scrollHeight}px`
+                  : "0px",
+              }}
             >
               <Fade>
                 <p dangerouslySetInnerHTML={{ __html: card.description }}></p>
@@ -140,7 +150,7 @@ export default function Page() {
             <a href={card.link}>
               <Button
                 variant="flat"
-                className="rounded-sm border-2 transition ease-in-out hover:scale-110 hover:text-emerald-500 hover:border-emerald-500"
+                className="border-2 bg-transparent text-blue-500 font-bold text-lg rounded-lg transition ease-in-out hover:scale-110 hover:text-emerald-500 hover:border-emerald-500"
               >
                 Visit
               </Button>

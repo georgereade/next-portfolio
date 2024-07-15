@@ -1,9 +1,10 @@
 "use client";
 
+import { Button } from "@nextui-org/react";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 
-export default function Homepage() {
+export default function Hero() {
   return (
     <main className="bg-[url('/electric-blue-tree.jpg')] bg-center md:bg-left md:bg-cover md:bg-fixed w-screen">
       <div
@@ -20,13 +21,13 @@ export default function Homepage() {
         <div className="bg-transparent text-secondary text-center mb-6">
           <Fade triggerOnce={true}>
             <div className="flex flex-col w-96 px-4 md:w-auto items-center">
-              <h1 className="my-1 md:my-4 py-12 pt-28 mx-4 text-xl md:text-3xl md:pt-40 leading-loose">
+              <h1 className="my-1 md:my-4 py-12 pt-28 mx-4 text-xl md:text-3xl md:pt-40 leading-loose text-white">
                 UK-based freelance web developer creating clean, modern and fast
                 web apps
                 <br />
               </h1>
               <div className="flex flex-col rounded-xl backdrop-blur-xl h-fit shadow-orange-300 shadow-md border-2 border-orange-300 z-50">
-                <h2 className="pt-4 text-xl md:text-3xl mx-8">
+                <h2 className="pt-4 text-xl md:text-3xl mx-8 text-gray-300">
                   {" "}
                   All of my work follows principles of <br />
                   <span className="font-extrabold text-orange-300">
@@ -49,22 +50,22 @@ export default function Homepage() {
                 id="indexbtns"
               >
                 <Fade delay={800} triggerOnce={true}>
-                  <a
+                  <Button
                     href="#projects-section"
-                    className="btn btn-outline-info btn-lg mx-4 fw-bold my-1 transition ease-in-out w-40 md:w-64 hover:scale-110 delay-50 origin-center shadow-xl shadow-blue-500"
+                    className="text-2xl m-4 p-2 font-bold bg-transparent text-blue-500 border-blue-500 border-2 rounded-lg transition ease-in-out w-40 md:w-64 hover:bg-blue-500 hover:text-black delay-50 origin-center shadow-xl hover:shadow-blue-500"
                     id="projectsbtn"
                   >
                     Portfolio
-                  </a>
+                  </Button>
                 </Fade>
                 <Fade delay={1100} triggerOnce={true}>
-                  <a
+                  <Button
                     href="#contact-section"
-                    className="btn btn-outline-info btn-lg mx-4 fw-bold my-1 transition ease-in-out w-40 md:w-64 hover:scale-110 delay-50 shadow-xl shadow-green-500"
+                    className="text-2xl m-4 p-2 font-bold bg-transparent text-emerald-500 border-emerald-500 border-2 rounded-lg transition ease-in-out w-40 md:w-64 hover:bg-emerald-500 hover:text-black delay-50 shadow-xl hover:shadow-green-500"
                     id="cvbtn"
                   >
                     Contact
-                  </a>
+                  </Button>
                 </Fade>
               </div>
             </div>

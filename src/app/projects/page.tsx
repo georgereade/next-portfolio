@@ -14,8 +14,8 @@ export default function Page() {
           <div className="">
             <Fade triggerOnce={true}>
               <div className="pt-5">
-                <Fade delay={100} triggerOnce={true} cascade>
-                  <h2 className="text-5xl pb-4">Services</h2>
+                <Fade triggerOnce={true} cascade>
+                  <h2 className="text-5xl pb-4 text-emerald-500">Services</h2>
                   <ul>
                     <li>
                       <p className="text-xl md:text-2xl pb-2 md:leading-loose">
@@ -80,10 +80,13 @@ export default function Page() {
           </div>
         </section>
         <div className="bg-gray-700 border-b-8 border-gray-200 pb-8">
-          <Fade cascade delay={200} triggerOnce={true}>
+          <Fade cascade delay={50} triggerOnce={true}>
             <div className="pb-0 mb-0">
               <div className="w-screen flex flex-col items-center">
-                <h2 className="text-5xl pt-8" id="portfolio-section">
+                <h2
+                  className="text-5xl py-8 text-emerald-500"
+                  id="portfolio-section"
+                >
                   Portfolio
                 </h2>
                 <ProjectItems />

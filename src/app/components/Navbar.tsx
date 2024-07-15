@@ -4,8 +4,6 @@ import React, { useState, useEffect, useRef } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import { usePathname } from "next/navigation";
 
 export default function Header() {
   // Set a useState to recognise scrolling, setting a class for the navbar making it opaque
@@ -98,7 +96,7 @@ export default function Header() {
           </Nav>
           <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li className="ms-3">
-              <a href="mailto:georgereade@hotmail.co.uk">
+              <a href="mailto:georgereade@proton.me">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
