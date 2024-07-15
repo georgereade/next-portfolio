@@ -37,8 +37,7 @@ export default function Navigationbar() {
   }, []);
 
   const menuItems = [
-    <div className="flex flex-row">
-      {" "}
+    <div key="menu-item-1" className="flex flex-row">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="40"
@@ -52,8 +51,7 @@ export default function Navigationbar() {
       </svg>
       <p className="text-emerald-500 ml-8">Email</p>
     </div>,
-    <div className="flex flex-row">
-      {" "}
+    <div key="menu-item-2" className="flex flex-row">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="40"
@@ -66,8 +64,7 @@ export default function Navigationbar() {
       </svg>
       <p className="text-emerald-500 ml-8">LinkedIn</p>
     </div>,
-    <div className="flex flex-row">
-      {" "}
+    <div key="menu-item-3" className="flex flex-row">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="40"
@@ -215,13 +212,13 @@ export default function Navigationbar() {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              //   color={
-              //     index === 0
-              //       ? "primary"
-              //       : index === menuItems.length - 1
-              //       ? "danger"
-              //       : "foreground"
-              //   }
+              color={
+                index === 0
+                  ? "primary"
+                  : index === menuItems.length - 1
+                  ? "danger"
+                  : "foreground"
+              }
               className={`w-full font-extrabold py-8 text-4xl border-b-2 text-emerald-500`}
               onClick={handleMenuClose}
               href={menuLinks[index]}
