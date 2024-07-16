@@ -1,12 +1,12 @@
 "use client";
 
-import { Button } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 
 export default function Hero() {
   return (
-    <main className="bg-[url('/electric-blue-tree.jpg')] bg-center md:bg-left md:bg-cover md:bg-fixed w-screen">
+    <main className="bg-[url('/electric-blue-tree.jpg')] bg-center md:bg-left md:bg-cover md:bg-fixed w-screen scroll-smooth">
       <div
         className="pt-3 items-center place-content-center h-screen flex flex-col"
         id="hero"
@@ -50,22 +50,24 @@ export default function Hero() {
                 id="indexbtns"
               >
                 <Fade delay={800} triggerOnce={true}>
-                  <Button
-                    href="#projects-section"
-                    className="text-2xl m-4 p-2 font-bold bg-transparent text-blue-500 border-blue-500 border-2 rounded-lg transition ease-in-out w-40 md:w-64 hover:bg-blue-500 hover:text-black delay-50 origin-center shadow-xl hover:shadow-blue-500"
-                    id="projectsbtn"
-                  >
-                    Portfolio
-                  </Button>
+                  <Link href="#projects-section">
+                    <Button
+                      className="text-2xl uppercase m-4 p-2 font-bold bg-transparent text-blue-500 border-blue-500 border-2 rounded-lg transition ease-in-out w-40 md:w-64 hover:bg-blue-500 hover:text-white delay-50 origin-center shadow-xl hover:shadow-blue-500"
+                      id="projectsbtn"
+                    >
+                      Portfolio
+                    </Button>
+                  </Link>
                 </Fade>
                 <Fade delay={1100} triggerOnce={true}>
-                  <Button
-                    href="#contact-section"
-                    className="text-2xl m-4 p-2 font-bold bg-transparent text-emerald-500 border-emerald-500 border-2 rounded-lg transition ease-in-out w-40 md:w-64 hover:bg-emerald-500 hover:text-black delay-50 shadow-xl hover:shadow-green-500"
-                    id="cvbtn"
-                  >
-                    Contact
-                  </Button>
+                  <Link href="#contact-section">
+                    <Button
+                      className="text-2xl uppercase m-4 p-2 font-bold bg-transparent text-emerald-500 border-emerald-500 border-2 rounded-lg transition ease-in-out w-40 md:w-64 hover:bg-emerald-500 hover:text-white delay-50 shadow-xl hover:shadow-green-500"
+                      id="cvbtn"
+                    >
+                      Contact
+                    </Button>
+                  </Link>
                 </Fade>
               </div>
             </div>

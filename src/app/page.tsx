@@ -5,7 +5,7 @@ import "./globals.css";
 
 export default function Home() {
   return (
-    <main className="scroll-smooth overflow-x-hidden">
+    <main className="overflow-x-hidden">
       <Homepage />
       <Projects />
       <Contact />

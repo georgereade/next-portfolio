@@ -108,7 +108,7 @@ export default function Navigationbar() {
             <Image
               src="/electric-blue-tree-bright.jpg"
               alt="Under The Drum"
-              className="mx-2 transition ease-in-out delay-10 hover:scale-110 rounded-full"
+              className="mx-2 transition ease-in-out delay-10 hover:scale-110 rounded-lg"
               width="50"
               height="50"
               priority
