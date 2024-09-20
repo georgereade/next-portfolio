@@ -106,9 +106,9 @@ export default function Navigationbar() {
         <NavbarBrand>
           <Link color="foreground" href="/">
             <Image
-              src="/electric-blue-tree-bright.jpg"
-              alt="Under The Drum"
-              className="mx-2 transition ease-in-out delay-10 hover:scale-110 rounded-lg"
+              src="/negroni.jpg"
+              alt="George Reade"
+              className="mx-2 transition ease-in-out delay-10 hover:scale-110 rounded-full"
               width="50"
               height="50"
               priority
